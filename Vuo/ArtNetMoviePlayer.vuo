@@ -1,0 +1,116 @@
+/**
+ * @file
+ *
+ * @author stewart
+ * @createdInVuoVersion 2.3.2
+ * @lastSavedInVuoVersion 2.3.2
+ * @copyright Copyright © 2021 stewart
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+BlendImages [type="vuo.image.blend" version="1.2.2" label="Blend Images|<refresh>refresh\l|<background>background\l|<foreground>foreground\l|<blendMode>blendMode\l|<foregroundOpacity>foregroundOpacity\l|<replaceOpacity>replaceOpacity\l|<blended>blended\r" pos="900,510" _blendMode="\"normal\"" _foregroundOpacity="0.99999999999999989" _replaceOpacity="true"];
+Changed [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="30,-15"];
+Changed2 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-90,315"];
+ConvertFrameToImage2 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="990,615"];
+ConvertIntegerToRealNumber [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="-375,45"];
+ConvertIntegerToRealNumber2 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="-150,330"];
+ConvertIntegerToRealNumber3 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="-165,120"];
+CountItemsInList [type="vuo.list.count.VuoText" version="1.0.0" label="Count Items in List|<refresh>refresh\l|<list>list\l|<itemCount>itemCount\r" pos="-525,0"];
+CubeLogo [type="klaus.cubeLogo" version="" label="Cube Logo|<refresh>refresh\l|<Color1>Color1\l|<Color2>Color2\l|<Time>Time\l|<Speed>Speed\l|<Width>Width\l|<Size>Size\l|<Control4>Control4\l|<OutputWidth>OutputWidth\l|<OutputHeight>OutputHeight\l|<Image>Image\r" pos="135,705" _OutputWidth="1920" _OutputHeight="1080"];
+Divide [type="vuo.math.divide.VuoReal" version="2.0.0" label="Divide|<refresh>refresh\l|<a>a\l|<b>b\l|<quotient>quotient\r" pos="-240,90"];
+Divide2 [type="vuo.math.divide.VuoReal" version="2.0.0" label="Divide|<refresh>refresh\l|<a>a\l|<b>b\l|<quotient>quotient\r" pos="-240,210" _b="32.0"];
+Divide3 [type="vuo.math.divide.VuoReal" version="2.0.0" label="Divide|<refresh>refresh\l|<a>a\l|<b>b\l|<quotient>quotient\r" pos="-255,0" _a="255.0"];
+FilterController [type="vuo.midi.filter.controller" version="2.0.0" label="Filter Controller|<refresh>refresh\l|<controller>controller\l|<channel>channel\l|<controllerNumber>controllerNumber\l|<value>value\r" pos="-615,1170" _channel="1" _controllerNumber="27"];
+FilterController2 [type="vuo.midi.filter.controller" version="2.0.0" label="Filter Controller|<refresh>refresh\l|<controller>controller\l|<channel>channel\l|<controllerNumber>controllerNumber\l|<value>value\r" pos="-630,1335" _channel="1" _controllerNumber="28"];
+FireOnDisplayRefresh2 [type="vuo.event.fireOnDisplayRefresh" version="1.0.0" label="Fire on Display Refresh|<refresh>refresh\l|<requestedFrame>requestedFrame\r" pos="-585,675" _requestedFrame_eventThrottling="drop"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-660,510" _started_eventThrottling="enqueue"];
+GetFileURLValues [type="vuo.url.get.file" version="1.0.0" label="Get File URL Values|<refresh>refresh\l|<url>url\l|<path>path\r|<folder>folder\r|<fileName>fileName\r|<extension>extension\r" pos="540,465"];
+GetItemFromList [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="660,135"];
+GetItemFromList2 [type="vuo.list.get.VuoInteger" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="-630,210" _which="257"];
+GetItemFromList3 [type="vuo.list.get.VuoInteger" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="-630,105" _which="258"];
+HoldValue [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="240,75"];
+HoldValue2 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="75,210"];
+ListFiles [type="vuo.file.list" version="1.0.2" label="List Files|<refresh>refresh\l|<folder>folder\l|<includeSubfolders>includeSubfolders\l|<fileType>fileType\l|<files>files\r" pos="360,360" _includeSubfolders="false" _fileType="\"movie\""];
+MIDIToRGB [type="klaus.mIDIToRGB" version="" label="MIDI to RGB|<refresh>refresh\l|<Controller>Controller\l|<Channel>Channel\l|<CC>CC\l|<Opacity>Opacity\l|<Color>Color\r" pos="-585,855" _Channel="1" _CC="21"];
+MIDIToRGB4 [type="klaus.mIDIToRGB" version="" label="MIDI to RGB|<refresh>refresh\l|<Controller>Controller\l|<Channel>Channel\l|<CC>CC\l|<Opacity>Opacity\l|<Color>Color\r" pos="-570,1020" _Channel="1" _CC="24"];
+MakeList4 [type="vuo.list.make.2.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-453,1211" _2="2"];
+MakeList5 [type="vuo.list.make.2.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-438,1346" _2="2"];
+Multiply2 [type="vuo.math.multiply.VuoInteger" version="2.1.0" label="Multiply|<refresh>refresh\l|<values>values\l|<product>product\r" pos="-420,1200"];
+Multiply3 [type="vuo.math.multiply.VuoInteger" version="2.1.0" label="Multiply|<refresh>refresh\l|<values>values\l|<product>product\r" pos="-405,1335"];
+PlayMovie [type="vuo.video.play" version="2.0.3" label="Play Movie|<refresh>refresh\l|<play>play\l|<pause>pause\l|<setTime>setTime\l|<url>url\l|<loop>loop\l|<playbackRate>playbackRate\l|<optimization>optimization\l|<decodedVideo>decodedVideo\r|<decodedAudio>decodedAudio\r|<finishedPlayback>finishedPlayback\r" pos="990,180" _setTime="\"\"" _loop="\"loop\"" _playbackRate="1" _optimization="\"auto\"" _decodedVideo_eventThrottling="drop" _decodedAudio_eventThrottling="enqueue" _finishedPlayback_eventThrottling="enqueue"];
+ReceiveArtNetMessages [type="vuo.artnet.receive" version="1.0.1" label="Receive Art-Net Messages|<refresh>refresh\l|<device>device\l|<receivedDmx>receivedDmx\r" pos="-900,150" _receivedDmx_eventThrottling="drop"];
+ReceiveMIDIEvents [type="vuo.midi.receive" version="2.1.2" label="Receive MIDI Events|<refresh>refresh\l|<device>device\l|<receivedNote>receivedNote\r|<receivedController>receivedController\r|<receivedPitchBend>receivedPitchBend\r" pos="-930,840" _device="\{\"name\":\"Launchkey Mini LK Mini MIDI\"\}" _receivedNote_eventThrottling="enqueue" _receivedController_eventThrottling="enqueue" _receivedPitchBend_eventThrottling="enqueue"];
+RenderImageToWindow [type="vuo.image.render.window2" version="4.0.0" label="Render Image to Window|<refresh>refresh\l|<image>image\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="1020,405" _updatedWindow_eventThrottling="enqueue"];
+Round [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="-45,435"];
+Round3 [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="-120,30"];
+Round4 [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="30,210"];
+Round5 [type="vuo.math.round" version="2.0.0" label="Round|<refresh>refresh\l|<real>real\l|<rounded>rounded\r" pos="30,315"];
+SelectInput [type="vuo.select.in.8.VuoText" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="165,435" _option1="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/Other\"" _option2="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/Water\"" _option3="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/TVStatic\"" _option4="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/PsychedelicHeatmap\"" _option5="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/ColourfulPixels\"" _option6="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/CrisscrossingGrid\"" _option7="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/AbstractDigital\"" _option8="\"..\\/Klaus dev\\/Klaus Video Work Folder\\/Vimeo Stock Footage\\/BokehEffect\""];
+SelectLatest [type="vuo.select.latest.2.VuoInteger" version="1.0.0" label="Select Latest|<refresh>refresh\l|<option1>option1\l|<option2>option2\l|<latest>latest\r" pos="-630,360" _option2="68"];
+SelectLatest2 [type="vuo.select.latest.2.VuoInteger" version="1.0.0" label="Select Latest|<refresh>refresh\l|<option1>option1\l|<option2>option2\l|<latest>latest\r" pos="-615,-135" _option1="224"];
+SelectOutput2 [type="vuo.select.out.8.VuoReal" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="-240,690" _which="1"];
+SelectOutput3 [type="vuo.select.out.8.VuoColor" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="-240,870" _which="1"];
+SelectOutput4 [type="vuo.select.out.8.VuoColor" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="-240,1035" _which="1"];
+SelectOutput5 [type="vuo.select.out.8.VuoInteger" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="-240,1200" _which="1"];
+SelectOutput6 [type="vuo.select.out.8.VuoInteger" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="-240,1365" _which="1"];
+ShareList2 [type="vuo.data.share.list.VuoText" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="345,255"];
+SummarizeValue5 [type="vuo.data.summarize.VuoText" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="765,540"];
+
+BlendImages:blended -> RenderImageToWindow:image;
+Changed2:changed -> HoldValue2:update;
+Changed:changed -> HoldValue:update;
+ConvertFrameToImage2:image -> BlendImages:background;
+ConvertIntegerToRealNumber2:real -> Divide2:a;
+ConvertIntegerToRealNumber3:real -> Divide3:b;
+ConvertIntegerToRealNumber:real -> Divide:a;
+CountItemsInList:itemCount -> ConvertIntegerToRealNumber3:integer;
+CubeLogo:Image -> BlendImages:foreground;
+Divide2:quotient -> Round5:real;
+Divide2:quotient -> Round:real;
+Divide3:quotient -> Divide:b;
+Divide:quotient -> Round3:real;
+Divide:quotient -> Round4:real;
+FilterController2:value -> MakeList5:1;
+FilterController:value -> MakeList4:1;
+FireOnDisplayRefresh2:requestedFrame -> SelectOutput2:in;
+FireOnStart:started -> ListFiles:folder;
+FireOnStart:started -> SelectInput:which;
+GetItemFromList2:item -> SelectLatest:option1;
+GetItemFromList3:item -> SelectLatest2:option2;
+GetItemFromList:item -> GetFileURLValues:url;
+GetItemFromList:item -> PlayMovie:play;
+GetItemFromList:item -> SummarizeValue5:value;
+HoldValue2:heldValue -> SelectInput:which;
+HoldValue:heldValue -> GetItemFromList:which;
+ListFiles:files -> ShareList2:value;
+MIDIToRGB4:Color -> SelectOutput4:in;
+MIDIToRGB:Color -> SelectOutput3:in;
+MakeList4:list -> Multiply2:values;
+MakeList5:list -> Multiply3:values;
+Multiply2:product -> SelectOutput5:in;
+Multiply3:product -> SelectOutput6:in;
+PlayMovie:decodedVideo -> ConvertFrameToImage2:frame;
+ReceiveArtNetMessages:receivedDmx -> GetItemFromList2:list;
+ReceiveArtNetMessages:receivedDmx -> GetItemFromList3:list;
+ReceiveMIDIEvents:receivedController -> FilterController2:controller;
+ReceiveMIDIEvents:receivedController -> FilterController:controller;
+ReceiveMIDIEvents:receivedController -> MIDIToRGB4:Controller;
+ReceiveMIDIEvents:receivedController -> MIDIToRGB:Controller;
+Round3:rounded -> Changed:value;
+Round4:rounded -> HoldValue:value;
+Round5:rounded -> HoldValue2:value;
+Round:rounded -> Changed2:value;
+SelectInput:out -> ListFiles:folder;
+SelectLatest2:latest -> ConvertIntegerToRealNumber:integer;
+SelectLatest:latest -> ConvertIntegerToRealNumber2:integer;
+SelectOutput2:option1 -> CubeLogo:Time;
+SelectOutput3:option1 -> CubeLogo:Color1;
+SelectOutput4:option1 -> CubeLogo:Color2;
+SelectOutput5:option1 -> CubeLogo:Speed;
+SelectOutput6:option1 -> CubeLogo:Width;
+ShareList2:sameValue -> CountItemsInList:list;
+ShareList2:sameValue -> GetItemFromList:list;
+SummarizeValue5:summary -> PlayMovie:url;
+}
