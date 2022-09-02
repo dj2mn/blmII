@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Video Controller v1</Model>
+ <Type>Other</Type>
+ <Channel Name="Bank Select" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Clip Select" Preset="IntensityMasterDimmer"/>
+ <Channel Name="FX Select">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="32">Off</Capability>
+  <Capability Min="33" Max="64">Posterize</Capability>
+  <Capability Min="65" Max="96">Analog TV</Capability>
+  <Capability Min="97" Max="128">Kaleidoscope</Capability>
+  <Capability Min="129" Max="160">Frost</Capability>
+  <Capability Min="161" Max="192">Pixellate</Capability>
+  <Capability Min="193" Max="224">Crosshatch</Capability>
+  <Capability Min="225" Max="255">Skeletonize</Capability>
+ </Channel>
+ <Channel Name="FX Depth">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Mode Name="Mode 1">
+  <Channel Number="0" ActsOn="6">Bank Select</Channel>
+  <Channel Number="1">Clip Select</Channel>
+  <Channel Number="2">FX Select</Channel>
+  <Channel Number="3">FX Depth</Channel>
+  <Channel Number="4">Red</Channel>
+  <Channel Number="5">Green</Channel>
+  <Channel Number="6">Blue</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

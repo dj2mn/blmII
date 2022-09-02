@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Video Controller v2</Model>
+ <Type>Other</Type>
+ <Channel Name="Bank Select" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Clip Select" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Speed/Direction" Default="128">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="1" Max="50">Fwd Slow</Capability>
+  <Capability Min="51" Max="100">Fwd Fast</Capability>
+  <Capability Min="101" Max="150">Rev Slow</Capability>
+  <Capability Min="151" Max="200">Rev Fast</Capability>
+ </Channel>
+ <Channel Name="FX Select" Preset="IntensityMasterDimmer"/>
+ <Channel Name="FX Depth" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Red" Preset="IntensityRed"/>
+ <Channel Name="Green" Preset="IntensityGreen"/>
+ <Channel Name="Blue" Preset="IntensityBlue"/>
+ <Mode Name="Mode 1">
+  <Channel Number="0" ActsOn="7">Bank Select</Channel>
+  <Channel Number="1">Clip Select</Channel>
+  <Channel Number="2">Speed/Direction</Channel>
+  <Channel Number="3">FX Select</Channel>
+  <Channel Number="4">FX Depth</Channel>
+  <Channel Number="5">Red</Channel>
+  <Channel Number="6">Green</Channel>
+  <Channel Number="7">Blue</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

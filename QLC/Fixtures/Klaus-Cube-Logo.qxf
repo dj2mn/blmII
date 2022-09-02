@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Cube Logo v1</Model>
+ <Type>Other</Type>
+ <Channel Name="Dimmer">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Rotation Speed">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Feedback Amount">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Feedback Size">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Kaleidoscope">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="RGB Offset">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="C1 Red" Preset="IntensityRed"/>
+ <Channel Name="C1 Green" Preset="IntensityGreen"/>
+ <Channel Name="C1 Blue" Preset="IntensityBlue"/>
+ <Channel Name="C2 Red" Preset="IntensityRed"/>
+ <Channel Name="C2 Green" Preset="IntensityGreen"/>
+ <Channel Name="C2 Blue" Preset="IntensityBlue"/>
+ <Channel Name="Wire Width">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Pan" Preset="PositionPan"/>
+ <Channel Name="Tilt" Preset="PositionTilt"/>
+ <Channel Name="Size" Default="128">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Mode Name="Mode 1">
+  <Channel Number="0" ActsOn="15">Dimmer</Channel>
+  <Channel Number="1">Rotation Speed</Channel>
+  <Channel Number="2">Feedback Amount</Channel>
+  <Channel Number="3">Feedback Size</Channel>
+  <Channel Number="4">Kaleidoscope</Channel>
+  <Channel Number="5">RGB Offset</Channel>
+  <Channel Number="6">C1 Red</Channel>
+  <Channel Number="7">C1 Green</Channel>
+  <Channel Number="8">C1 Blue</Channel>
+  <Channel Number="9">C2 Red</Channel>
+  <Channel Number="10">C2 Green</Channel>
+  <Channel Number="11">C2 Blue</Channel>
+  <Channel Number="12">Wire Width</Channel>
+  <Channel Number="13">Pan</Channel>
+  <Channel Number="14">Tilt</Channel>
+  <Channel Number="15">Size</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

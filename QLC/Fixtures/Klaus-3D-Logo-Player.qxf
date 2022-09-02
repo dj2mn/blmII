@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>3D Logo Player</Model>
+ <Type>Effect</Type>
+ <Channel Name="Object Select">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Rotation Speed">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="0">Stop</Capability>
+  <Capability Min="1" Max="64">Rotate X</Capability>
+  <Capability Min="65" Max="128">Rotate Y</Capability>
+  <Capability Min="129" Max="192">Rotate Z</Capability>
+  <Capability Min="193" Max="255">Rotate All</Capability>
+ </Channel>
+ <Channel Name="FX Select">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="0">FX Off</Capability>
+  <Capability Min="1" Max="32">Capability 1</Capability>
+  <Capability Min="33" Max="64">Capability 2</Capability>
+  <Capability Min="65" Max="96">Capability 3</Capability>
+  <Capability Min="97" Max="128">Capability 4</Capability>
+  <Capability Min="129" Max="160">Capability 5</Capability>
+  <Capability Min="161" Max="192">Capability 6</Capability>
+  <Capability Min="193" Max="224">Capability 7</Capability>
+  <Capability Min="225" Max="255">Capability 8</Capability>
+ </Channel>
+ <Channel Name="FX Depth">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Colour 1 Red" Preset="IntensityRed"/>
+ <Channel Name="Colour 1 Green" Preset="IntensityGreen"/>
+ <Channel Name="Colour 1 Blue" Preset="IntensityBlue"/>
+ <Channel Name="Colour 2 Red" Preset="IntensityRed"/>
+ <Channel Name="Colour 2 Green" Preset="IntensityGreen"/>
+ <Channel Name="Colour 2 Blue" Preset="IntensityBlue"/>
+ <Channel Name="Wireframe Width">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Pan" Default="128" Preset="PositionPan"/>
+ <Channel Name="Tilt" Default="128" Preset="PositionTilt"/>
+ <Channel Name="Size" Default="128">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Tile Spacing">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tile Field Size X">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tile Field Size Y">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Channel Name="Tile Field Size Z">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="255"></Capability>
+ </Channel>
+ <Mode Name="1">
+  <Channel Number="0">Object Select</Channel>
+  <Channel Number="1">Rotation Speed</Channel>
+  <Channel Number="2">FX Select</Channel>
+  <Channel Number="3">FX Depth</Channel>
+  <Channel Number="4">Colour 1 Red</Channel>
+  <Channel Number="5">Colour 1 Green</Channel>
+  <Channel Number="6">Colour 1 Blue</Channel>
+  <Channel Number="7">Colour 2 Red</Channel>
+  <Channel Number="8">Colour 2 Green</Channel>
+  <Channel Number="9">Colour 2 Blue</Channel>
+  <Channel Number="10">Wireframe Width</Channel>
+  <Channel Number="11">Pan</Channel>
+  <Channel Number="12">Tilt</Channel>
+  <Channel Number="13">Size</Channel>
+  <Channel Number="14">Tile Spacing</Channel>
+  <Channel Number="15">Tile Field Size X</Channel>
+  <Channel Number="16">Tile Field Size Y</Channel>
+  <Channel Number="17">Tile Field Size Z</Channel>
+  <Head>
+   <Channel>4</Channel>
+   <Channel>5</Channel>
+   <Channel>6</Channel>
+  </Head>
+  <Head>
+   <Channel>7</Channel>
+   <Channel>8</Channel>
+   <Channel>9</Channel>
+  </Head>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="360" TiltMax="360"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>
