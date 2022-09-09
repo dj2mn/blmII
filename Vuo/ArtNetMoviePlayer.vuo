@@ -31,7 +31,7 @@ ChangeFullscreenStatus [type="vuo.window.fullscreen2" version="2.0.0" label="Cha
 Changed [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-1065,585"];
 Changed10 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="360,510"];
 Changed11 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="480,705"];
-Changed14 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-1185,315"];
+Changed14 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-1185,210"];
 Changed15 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-975,1980"];
 Changed16 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-885,675"];
 Changed17 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="615,1635"];
@@ -230,7 +230,7 @@ Scale6 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refr
 Scale7 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="795,675" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="1.0" _limitToRange="false"];
 Scale8 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-1035,1560" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="2.0" _limitToRange="false"];
 ScaleDMXValuesToListSize2 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale DMX values to list size|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-1200,405" _start="0" _end="255" _scaledStart="0" _limitToRange="true"];
-ScaleDMXValuesToListSize3 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale DMX values to list size|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-1200,675" _start="0" _end="255" _scaledStart="0" _limitToRange="true"];
+ScaleDMXValuesToListSize3 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale DMX values to list size|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-1185,675" _start="0" _end="255" _scaledStart="0" _limitToRange="true"];
 SelectOutput2 [type="vuo.select.out.boolean.VuoInteger" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="-735,495"];
 SelectOutput3 [type="vuo.select.out.boolean.VuoInteger" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="-375,2055"];
 SendNDIVideo [type="vuo.ndi.send" version="1.0.0" label="Send NDI Video|<refresh>refresh\l|<sendImage>sendImage\l|<sendAudio>sendAudio\l|<sendMetadata>sendMetadata\l|<sourceName>sourceName\l|<sourceGroups>sourceGroups\l|<receivedMetadata>receivedMetadata\r|<tallyProgramChanged>tallyProgramChanged\r|<tallyPreviewChanged>tallyPreviewChanged\r|<connectionsChanged>connectionsChanged\r" pos="2640,225" _sourceName="\"VUO\"" _receivedMetadata_eventThrottling="enqueue" _tallyProgramChanged_eventThrottling="enqueue" _tallyPreviewChanged_eventThrottling="enqueue" _connectionsChanged_eventThrottling="enqueue"];
@@ -262,7 +262,7 @@ Comment9 [type="vuo.comment" label="\"Inputs\"" pos="-1860,150" width="295" heig
 Add12:sum -> GetItemFromList8:which [style=invis];
 Add13:sum -> GetItemFromList11:which [style=invis];
 Add2:sum -> GetMovieSelectValue3:which [style=invis];
-Add4:sum -> GetRotationSpeed2:which;
+Add4:sum -> GetRotationSpeed2:which [style=invis];
 Add6:sum -> DMXToRGB:DMXChan [style=invis];
 Add7:sum -> DMXToRGB2:DMXChan [style=invis];
 Add8:sum -> GetItemFromList7:which [style=invis];
@@ -280,6 +280,7 @@ ChangeFullscreenStatus:changedWindowDescription -> RenderImageToWindow:setWindow
 Changed10:changed -> HoldRed2:update;
 Changed11:changed -> HoldRed3:update;
 Changed14:changed -> HoldValue7:update;
+Changed14:changed -> ListFiles:folder;
 Changed15:changed -> FetchScene:url;
 Changed15:changed -> HoldValue8:update;
 Changed16:changed -> HoldValue9:update;
