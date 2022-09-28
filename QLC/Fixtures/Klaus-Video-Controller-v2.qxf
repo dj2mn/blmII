@@ -19,7 +19,17 @@
   <Capability Min="151" Max="200">Rev Fast</Capability>
  </Channel>
  <Channel Name="FX Select" Preset="IntensityMasterDimmer"/>
- <Channel Name="FX Depth" Preset="IntensityMasterDimmer"/>
+ <Channel Name="FX Depth">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="31">Off</Capability>
+  <Capability Min="32" Max="63">Posterize</Capability>
+  <Capability Min="64" Max="95">ImageDistortion</Capability>
+  <Capability Min="96" Max="127">Kaleidoscope</Capability>
+  <Capability Min="128" Max="159">Frost</Capability>
+  <Capability Min="160" Max="191">Pixellate</Capability>
+  <Capability Min="192" Max="223">Feedback</Capability>
+  <Capability Min="224" Max="255">Crosshatch</Capability>
+ </Channel>
  <Channel Name="Red" Preset="IntensityRed"/>
  <Channel Name="Green" Preset="IntensityGreen"/>
  <Channel Name="Blue" Preset="IntensityBlue"/>

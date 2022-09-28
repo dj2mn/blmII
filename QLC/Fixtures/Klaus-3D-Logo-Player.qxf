@@ -22,15 +22,14 @@
  </Channel>
  <Channel Name="FX Select">
   <Group Byte="0">Intensity</Group>
-  <Capability Min="0" Max="0">FX Off</Capability>
-  <Capability Min="1" Max="32">Capability 1</Capability>
-  <Capability Min="33" Max="64">Capability 2</Capability>
-  <Capability Min="65" Max="96">Capability 3</Capability>
-  <Capability Min="97" Max="128">Capability 4</Capability>
-  <Capability Min="129" Max="160">Capability 5</Capability>
-  <Capability Min="161" Max="192">Capability 6</Capability>
-  <Capability Min="193" Max="224">Capability 7</Capability>
-  <Capability Min="225" Max="255">Capability 8</Capability>
+  <Capability Min="0" Max="31">Off</Capability>
+  <Capability Min="32" Max="63">Posterize</Capability>
+  <Capability Min="64" Max="95">ImageDistort</Capability>
+  <Capability Min="96" Max="127">Kaleidoscope</Capability>
+  <Capability Min="128" Max="159">Frost</Capability>
+  <Capability Min="160" Max="191">Pixellate</Capability>
+  <Capability Min="192" Max="223">Feedback</Capability>
+  <Capability Min="224" Max="255">Crosshatch</Capability>
  </Channel>
  <Channel Name="FX Depth">
   <Group Byte="0">Intensity</Group>
