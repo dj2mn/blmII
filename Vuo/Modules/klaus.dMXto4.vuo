@@ -1,0 +1,50 @@
+/**
+ * @file
+ * @brief DMXto4
+ * Converts DMX value range 0-255 to range 1-4.
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.1
+ * @lastSavedInVuoVersion 2.4.1
+ * @copyright Copyright © 2022 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+BecameTrue [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,15"];
+BecameTrue2 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,105"];
+BecameTrue3 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,195"];
+BecameTrue4 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,285"];
+HoldValue [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,15" _value="1" _update_manuallyFirable="yes"];
+HoldValue2 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,285" _value="4"];
+HoldValue3 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,105" _value="2"];
+HoldValue4 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,195" _value="3"];
+IsWithinRange [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,195" _minimum="128" _maximum="191"];
+IsWithinRange2 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,105" _minimum="64" _maximum="127"];
+IsWithinRange4 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,15" _minimum="0" _maximum="63"];
+IsWithinRange5 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,285" _minimum="192" _maximum="255"];
+SelectLatest [type="vuo.select.latest.8.VuoInteger" version="1.0.0" label="Select Latest|<refresh>refresh\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<latest>latest\r" pos="825,105"];
+ShareValue [type="vuo.data.share.VuoInteger" version="1.0.0" label="Share Value|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="120,120"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Input>Input\r" _Input_type="VuoInteger"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Output>Output\l" _Output_type="VuoInteger"];
+
+BecameTrue2:becameTrue -> HoldValue3:update;
+BecameTrue3:becameTrue -> HoldValue4:update;
+BecameTrue4:becameTrue -> HoldValue2:update;
+BecameTrue:becameTrue -> HoldValue:update;
+HoldValue2:heldValue -> SelectLatest:option4;
+HoldValue3:heldValue -> SelectLatest:option2;
+HoldValue4:heldValue -> SelectLatest:option3;
+HoldValue:heldValue -> SelectLatest:option1;
+IsWithinRange2:withinRange -> BecameTrue2:value;
+IsWithinRange4:withinRange -> BecameTrue:value;
+IsWithinRange5:withinRange -> BecameTrue4:value;
+IsWithinRange:withinRange -> BecameTrue3:value;
+PublishedInputs:Input -> ShareValue:value;
+SelectLatest:latest -> PublishedOutputs:Output;
+ShareValue:sameValue -> IsWithinRange2:value;
+ShareValue:sameValue -> IsWithinRange4:value;
+ShareValue:sameValue -> IsWithinRange5:value;
+ShareValue:sameValue -> IsWithinRange:value;
+}

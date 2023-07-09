@@ -1,0 +1,118 @@
+/**
+ * @file
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.1
+ * @lastSavedInVuoVersion 2.4.2
+ * @copyright Copyright © 2022 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+ArrangeLayersInGrid [type="vuo.layer.arrange.grid" version="1.1.0" label="Arrange Layers in Grid|<refresh>refresh\l|<layers>layers\l|<scaleToFit>scaleToFit\l|<anchor>anchor\l|<center>center\l|<width>width\l|<columns>columns\l|<height>height\l|<rows>rows\l|<griddedLayer>griddedLayer\r" pos="1710,465" _scaleToFit="true" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _width="2.0" _columns="2" _height="1.5" _rows="3"];
+ConnectionsChanged2 [type="vuo.data.share.VuoInteger" version="1.0.0" label="Connections Changed|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="690,825"];
+ConnectionsChanged3 [type="vuo.data.share.VuoInteger" version="1.0.0" label="Connections Changed|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="735,1215"];
+ConvertFrameToImage [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="345,1245"];
+ConvertFrameToImage2 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="225,285"];
+ConvertFrameToImage3 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="645,75"];
+ConvertFrameToImage4 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="765,360"];
+ConvertFrameToImage5 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="810,750"];
+ConvertFrameToImage6 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="390,1635"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-495,-60" _started_eventThrottling="enqueue"];
+GetChildLayers [type="vuo.layer.get.child" version="1.0.0" label="Get Child Layers|<refresh>refresh\l|<layer>layer\l|<childLayers>childLayers\r" pos="495,720"];
+IsGreaterThan [type="vuo.data.isGreaterThan.VuoInteger" version="1.0.0" label="Is Greater Than|<refresh>refresh\l|<a>a\l|<b>b\l|<greaterThan>greaterThan\r" pos="525,45" _b="0"];
+IsGreaterThan2 [type="vuo.data.isGreaterThan.VuoInteger" version="1.0.0" label="Is Greater Than|<refresh>refresh\l|<a>a\l|<b>b\l|<greaterThan>greaterThan\r" pos="495,690" _b="0"];
+IsGreaterThan3 [type="vuo.data.isGreaterThan.VuoInteger" version="1.0.0" label="Is Greater Than|<refresh>refresh\l|<a>a\l|<b>b\l|<greaterThan>greaterThan\r" pos="540,1080" _b="0"];
+ListNDISources [type="vuo.ndi.listSources" version="1.0.0" label="List NDI Sources|<refresh>refresh\l|<includeLocalSources>includeLocalSources\l|<includeSourceGroups>includeSourceGroups\l|<includeSourceIPs>includeSourceIPs\l|<sourcesChanged>sourcesChanged\r" pos="-45,330" _includeLocalSources="true" _sourcesChanged_eventThrottling="drop"];
+ListVideoDevices [type="vuo.video.listDevices" version="1.0.0" label="List Video Devices|<refresh>refresh\l|<inputDevices>inputDevices\r" pos="-165,225" _inputDevices_eventThrottling="enqueue"];
+MakeImageLayer [type="vuo.layer.make.scaled" version="3.1.0" label="Make Image Layer|<refresh>refresh\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<fixed>fixed\l|<opacity>opacity\l|<layer>layer\r" pos="255,690" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _rotation="0.0" _width="0.5" _fixed="\"horizontal\"" _opacity="1.0"];
+MakeImageLayer2 [type="vuo.layer.make.scaled" version="3.1.0" label="Make Image Layer|<refresh>refresh\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<fixed>fixed\l|<opacity>opacity\l|<layer>layer\r" pos="240,105" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _rotation="0.0" _width="0.5" _fixed="\"horizontal\"" _opacity="1.0"];
+MakeImageLayer3 [type="vuo.layer.make.scaled" version="3.1.0" label="Make Image Layer|<refresh>refresh\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<fixed>fixed\l|<opacity>opacity\l|<layer>layer\r" pos="300,1080" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _center="\{\"x\":0.0,\"y\":0.0\}" _rotation="0.0" _width="0.5" _fixed="\"horizontal\"" _opacity="1.0"];
+MakeList [type="vuo.list.make.1.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="972,131" _1="\"Public\""];
+MakeList2 [type="vuo.list.make.0.VuoAudioSamples" version="2.0.0" label="Make List|<refresh>refresh\l|<list>list\r" pos="917,86"];
+MakeList3 [type="vuo.list.make.1.VuoAudioSamples" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="927,716"];
+MakeList4 [type="vuo.list.make.1.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="987,761" _1="\"Public\""];
+MakeList5 [type="vuo.list.make.1.VuoAudioSamples" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="972,1106"];
+MakeList6 [type="vuo.list.make.1.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="1032,1151" _1="\"Public\""];
+MakeList7 [type="vuo.list.make.6.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<list>list\r" pos="1642,476"];
+MakeList8 [type="vuo.list.make.1.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-112,356" _1="\"Public\""];
+MakeList9 [type="vuo.list.make.2.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-78,371"];
+MakeToggleButton [type="vuo.ui.make.toggle" version="1.0.0" label="Make Toggle Button|<refresh>refresh\l|<window>window\l|<label>label\l|<setValue>setValue\l|<anchor>anchor\l|<position>position\l|<theme>theme\l|<updatedLayer>updatedLayer\r|<changed>changed\r|<turnedOn>turnedOn\r|<turnedOff>turnedOff\r" pos="1425,675" fillcolor="orange" _label="\"Send FaceTime Camera\"" _setValue="false" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _position="\{\"x\":0.0,\"y\":0.0\}" _updatedLayer_eventThrottling="enqueue" _changed_eventThrottling="enqueue" _turnedOn_eventThrottling="enqueue" _turnedOff_eventThrottling="enqueue"];
+MakeToggleButton2 [type="vuo.ui.make.toggle" version="1.0.0" label="Make Toggle Button|<refresh>refresh\l|<window>window\l|<label>label\l|<setValue>setValue\l|<anchor>anchor\l|<position>position\l|<theme>theme\l|<updatedLayer>updatedLayer\r|<changed>changed\r|<turnedOn>turnedOn\r|<turnedOff>turnedOff\r" pos="1380,30" fillcolor="orange" _label="\"Send iOS Camera\"" _setValue="false" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _position="\{\"x\":0.0,\"y\":0.0\}" _updatedLayer_eventThrottling="enqueue" _changed_eventThrottling="enqueue" _turnedOn_eventThrottling="enqueue" _turnedOff_eventThrottling="enqueue"];
+MakeToggleButton3 [type="vuo.ui.make.toggle" version="1.0.0" label="Make Toggle Button|<refresh>refresh\l|<window>window\l|<label>label\l|<setValue>setValue\l|<anchor>anchor\l|<position>position\l|<theme>theme\l|<updatedLayer>updatedLayer\r|<changed>changed\r|<turnedOn>turnedOn\r|<turnedOff>turnedOff\r" pos="1470,1065" fillcolor="orange" _label="\"Send OBS Camera\"" _setValue="false" _anchor="\{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"\}" _position="\{\"x\":0.0,\"y\":0.0\}" _updatedLayer_eventThrottling="enqueue" _changed_eventThrottling="enqueue" _turnedOn_eventThrottling="enqueue" _turnedOff_eventThrottling="enqueue"];
+ReceiveLiveVideo [type="vuo.video.receive2" version="2.0.0" label="Receive Live Video|<refresh>refresh\l|<device>device\l|<width>width\l|<height>height\l|<receivedFrame>receivedFrame\r" pos="240,570" _width="0" _height="0" _receivedFrame_eventThrottling="drop"];
+ReceiveLiveVideo2 [type="vuo.video.receive2" version="2.0.0" label="Receive Live Video|<refresh>refresh\l|<device>device\l|<width>width\l|<height>height\l|<receivedFrame>receivedFrame\r" pos="225,-75" _width="0" _height="0" _receivedFrame_eventThrottling="drop"];
+ReceiveLiveVideo3 [type="vuo.video.receive2" version="2.0.0" label="Receive Live Video|<refresh>refresh\l|<device>device\l|<width>width\l|<height>height\l|<receivedFrame>receivedFrame\r" pos="285,960" _width="0" _height="0" _receivedFrame_eventThrottling="drop"];
+RenderLayersToWindow [type="vuo.layer.render.window2" version="3.0.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="2040,420" fillcolor="blue" _multisampling="\"4\"" _updatedWindow_eventThrottling="enqueue"];
+SelectInput2 [type="vuo.select.in.boolean.VuoVideoFrame" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="750,945"];
+SelectInput3 [type="vuo.select.in.boolean.VuoVideoFrame" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="735,-105"];
+SelectInput4 [type="vuo.select.in.boolean.VuoVideoFrame" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="705,555"];
+SelectOutput [type="vuo.select.out.boolean.VuoVideoFrame" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="720,45"];
+SelectOutput2 [type="vuo.select.out.boolean.VuoVideoFrame" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="690,690"];
+SelectOutput3 [type="vuo.select.out.boolean.VuoVideoFrame" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="735,1080"];
+SendNDIVideo [type="vuo.ndi.send" version="1.0.0" label="Send NDI Video|<refresh>refresh\l|<sendImage>sendImage\l|<sendAudio>sendAudio\l|<sendMetadata>sendMetadata\l|<sourceName>sourceName\l|<sourceGroups>sourceGroups\l|<receivedMetadata>receivedMetadata\r|<tallyProgramChanged>tallyProgramChanged\r|<tallyPreviewChanged>tallyPreviewChanged\r|<connectionsChanged>connectionsChanged\r" pos="1005,60" _sourceName="\"iOS\"" _receivedMetadata_eventThrottling="enqueue" _tallyProgramChanged_eventThrottling="enqueue" _tallyPreviewChanged_eventThrottling="enqueue" _connectionsChanged_eventThrottling="enqueue"];
+SendNDIVideo2 [type="vuo.ndi.send" version="1.0.0" label="Send NDI Video|<refresh>refresh\l|<sendImage>sendImage\l|<sendAudio>sendAudio\l|<sendMetadata>sendMetadata\l|<sourceName>sourceName\l|<sourceGroups>sourceGroups\l|<receivedMetadata>receivedMetadata\r|<tallyProgramChanged>tallyProgramChanged\r|<tallyPreviewChanged>tallyPreviewChanged\r|<connectionsChanged>connectionsChanged\r" pos="1020,690" _sourceName="\"FaceTime\"" _receivedMetadata_eventThrottling="enqueue" _tallyProgramChanged_eventThrottling="enqueue" _tallyPreviewChanged_eventThrottling="enqueue" _connectionsChanged_eventThrottling="enqueue"];
+SendNDIVideo3 [type="vuo.ndi.send" version="1.0.0" label="Send NDI Video|<refresh>refresh\l|<sendImage>sendImage\l|<sendAudio>sendAudio\l|<sendMetadata>sendMetadata\l|<sourceName>sourceName\l|<sourceGroups>sourceGroups\l|<receivedMetadata>receivedMetadata\r|<tallyProgramChanged>tallyProgramChanged\r|<tallyPreviewChanged>tallyPreviewChanged\r|<connectionsChanged>connectionsChanged\r" pos="1065,1080" _sourceName="\"OBS\\/NDI\"" _receivedMetadata_eventThrottling="enqueue" _tallyProgramChanged_eventThrottling="enqueue" _tallyPreviewChanged_eventThrottling="enqueue" _connectionsChanged_eventThrottling="enqueue"];
+ShareValue [type="vuo.data.share.VuoInteger" version="1.0.0" label="Connections Changed|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="720,195"];
+SpecifyVideoInput [type="vuo.video.make.input" version="1.0.0" label="Specify Video Input|<refresh>refresh\l|<name>name\l|<device>device\r" pos="-180,570" _name="\"Built-in\""];
+SpecifyVideoInput2 [type="vuo.video.make.input" version="1.0.0" label="Specify Video Input|<refresh>refresh\l|<name>name\l|<device>device\r" pos="-195,30" _name="\"iOS Device\"" _name_manuallyFirable="yes"];
+SpecifyVideoInput3 [type="vuo.video.make.input" version="1.0.0" label="Specify Video Input|<refresh>refresh\l|<name>name\l|<device>device\r" pos="-135,960" _name="\"OBS Virtual Camera\""];
+
+ArrangeLayersInGrid:griddedLayer -> GetChildLayers:layer;
+ConnectionsChanged2:sameValue -> IsGreaterThan2:a;
+ConnectionsChanged3:sameValue -> IsGreaterThan3:a;
+ConvertFrameToImage2:image -> MakeImageLayer2:image;
+ConvertFrameToImage3:image -> SendNDIVideo:sendImage;
+ConvertFrameToImage4:image -> SendNDIVideo2:sendImage;
+ConvertFrameToImage5:image -> SendNDIVideo3:sendImage;
+ConvertFrameToImage6:image -> MakeImageLayer3:image;
+ConvertFrameToImage:image -> MakeImageLayer:image;
+FireOnStart:started -> SpecifyVideoInput2:name;
+FireOnStart:started -> SpecifyVideoInput3:name;
+FireOnStart:started -> SpecifyVideoInput:name;
+GetChildLayers:childLayers -> RenderLayersToWindow:layers;
+IsGreaterThan2:greaterThan -> SelectOutput2:which;
+IsGreaterThan3:greaterThan -> SelectOutput3:which;
+IsGreaterThan:greaterThan -> SelectOutput:which;
+MakeImageLayer2:layer -> MakeList7:2;
+MakeImageLayer3:layer -> MakeList7:6;
+MakeImageLayer:layer -> MakeList7:4;
+MakeList2:list -> SendNDIVideo:sendAudio;
+MakeList3:list -> SendNDIVideo2:sendAudio;
+MakeList4:list -> SendNDIVideo2:sourceGroups;
+MakeList5:list -> SendNDIVideo3:sendAudio;
+MakeList6:list -> SendNDIVideo3:sourceGroups;
+MakeList7:list -> ArrangeLayersInGrid:layers;
+MakeList8:list -> ListNDISources:includeSourceGroups;
+MakeList9:list -> ListNDISources:includeSourceIPs;
+MakeList:list -> SendNDIVideo:sourceGroups;
+MakeToggleButton2:changed -> SelectInput3:which;
+MakeToggleButton2:updatedLayer -> MakeList7:1;
+MakeToggleButton3:changed -> SelectInput2:which;
+MakeToggleButton3:updatedLayer -> MakeList7:5;
+MakeToggleButton:changed -> SelectInput4:which;
+MakeToggleButton:updatedLayer -> MakeList7:3;
+ReceiveLiveVideo2:receivedFrame -> ConvertFrameToImage2:frame;
+ReceiveLiveVideo2:receivedFrame -> SelectInput3:trueOption;
+ReceiveLiveVideo3:receivedFrame -> ConvertFrameToImage6:frame;
+ReceiveLiveVideo3:receivedFrame -> SelectInput2:trueOption;
+ReceiveLiveVideo:receivedFrame -> ConvertFrameToImage:frame;
+ReceiveLiveVideo:receivedFrame -> SelectInput4:trueOption;
+RenderLayersToWindow:updatedWindow -> MakeToggleButton2:window;
+RenderLayersToWindow:updatedWindow -> MakeToggleButton3:window;
+RenderLayersToWindow:updatedWindow -> MakeToggleButton:window;
+SelectInput2:out -> SelectOutput3:in;
+SelectInput3:out -> SelectOutput:in;
+SelectInput4:out -> SelectOutput2:in;
+SelectOutput2:trueOption -> ConvertFrameToImage4:frame;
+SelectOutput3:trueOption -> ConvertFrameToImage5:frame;
+SelectOutput:trueOption -> ConvertFrameToImage3:frame;
+SendNDIVideo2:connectionsChanged -> ConnectionsChanged2:value;
+SendNDIVideo3:connectionsChanged -> ConnectionsChanged3:value;
+SendNDIVideo:connectionsChanged -> ShareValue:value;
+ShareValue:sameValue -> IsGreaterThan:a;
+SpecifyVideoInput2:device -> ReceiveLiveVideo2:device;
+SpecifyVideoInput3:device -> ReceiveLiveVideo3:device;
+SpecifyVideoInput:device -> ReceiveLiveVideo:device;
+}
