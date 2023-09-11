@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Mixlaser II</Model>
+ <Type>Flower</Type>
+ <Channel Name="Auto">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="15">Blackout</Capability>
+  <Capability Min="16" Max="30">Spots</Capability>
+  <Capability Min="31" Max="45">Lasers</Capability>
+  <Capability Min="46" Max="60">Derby</Capability>
+  <Capability Min="61" Max="75">Strobes</Capability>
+  <Capability Min="76" Max="90">Spot/Laser/Derby</Capability>
+  <Capability Min="91" Max="105">Spot/Laser/Strobe</Capability>
+  <Capability Min="106" Max="120">Spot/Derby/Strobe</Capability>
+  <Capability Min="131" Max="135">Laser/Derby/Strobe</Capability>
+  <Capability Min="136" Max="150">Spot/Laser</Capability>
+  <Capability Min="151" Max="165">Spot/Derby</Capability>
+  <Capability Min="166" Max="180">Spot/Strobe</Capability>
+  <Capability Min="181" Max="195">Laser/Derby</Capability>
+  <Capability Min="196" Max="210">Laser/Strobe</Capability>
+  <Capability Min="211" Max="225">Derby/Strobe</Capability>
+  <Capability Min="226" Max="255">All</Capability>
+ </Channel>
+ <Channel Name="Auto Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="200">Auto Speed</Capability>
+  <Capability Min="201" Max="255">Auto Sound</Capability>
+ </Channel>
+ <Channel Name="Wash 1">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 2">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 3">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 4">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 5">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 6">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 7">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash 8">
+  <Group Byte="0">Colour</Group>
+  <Capability Min="0" Max="51">Blackout</Capability>
+  <Capability Min="52" Max="102">Red</Capability>
+  <Capability Min="103" Max="153">Green</Capability>
+  <Capability Min="154" Max="204">Blue</Capability>
+  <Capability Min="205" Max="255">UV</Capability>
+ </Channel>
+ <Channel Name="Wash Strobe" Preset="ShutterStrobeSlowFast"/>
+ <Channel Name="Derby">
+  <Group Byte="1">Colour</Group>
+  <Capability Min="0" Max="9">Blackout</Capability>
+  <Capability Min="10" Max="14">Red</Capability>
+  <Capability Min="15" Max="19">Green</Capability>
+  <Capability Min="20" Max="24">Blue</Capability>
+  <Capability Min="25" Max="29">Amber</Capability>
+  <Capability Min="30" Max="34">White</Capability>
+  <Capability Min="35" Max="39">White/Red</Capability>
+  <Capability Min="40" Max="44">Red/Green</Capability>
+  <Capability Min="45" Max="49">Green/Blue</Capability>
+  <Capability Min="50" Max="54">Blue/Amber</Capability>
+  <Capability Min="55" Max="59">Amber/White</Capability>
+  <Capability Min="60" Max="64">White/Green</Capability>
+  <Capability Min="65" Max="69">Green/Amber</Capability>
+  <Capability Min="70" Max="74">Amber/Red</Capability>
+  <Capability Min="75" Max="79">Red/Blue</Capability>
+  <Capability Min="80" Max="84">Blue/White</Capability>
+  <Capability Min="85" Max="89">Red/Green/Blue</Capability>
+  <Capability Min="90" Max="94">Red/Green/Amber</Capability>
+  <Capability Min="95" Max="99">Red/Green/White</Capability>
+  <Capability Min="100" Max="104">Red/Amber/Blue</Capability>
+  <Capability Min="105" Max="109">Red/White/Blue</Capability>
+  <Capability Min="110" Max="114">Red/Amber/White</Capability>
+  <Capability Min="115" Max="119">Amber/Green/Blue</Capability>
+  <Capability Min="120" Max="124">Blue/Green/White</Capability>
+  <Capability Min="125" Max="129">Amber/Green/White</Capability>
+  <Capability Min="130" Max="134">Amber/White/Blue</Capability>
+  <Capability Min="135" Max="139">Red/Green/Blue/Amber</Capability>
+  <Capability Min="140" Max="144">Red/Green/Blue/White</Capability>
+  <Capability Min="145" Max="149">Green/Blue/Amber/White</Capability>
+  <Capability Min="150" Max="154">Red/Green/Amber/White</Capability>
+  <Capability Min="155" Max="159">Red/Blue/Amber/White</Capability>
+  <Capability Min="160" Max="164">Red/Green/Blue/Amber/White</Capability>
+  <Capability Min="165" Max="209">Auto 1</Capability>
+  <Capability Min="210" Max="222">Auto 2</Capability>
+  <Capability Min="223" Max="255">Auto Sound</Capability>
+ </Channel>
+ <Channel Name="Derby Strobe">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="5" Max="200">Speed</Capability>
+  <Capability Min="201" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Derby Direction/Speed">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="4">Stop</Capability>
+  <Capability Min="5" Max="127">Forward</Capability>
+  <Capability Min="128" Max="133">Stop</Capability>
+  <Capability Min="134" Max="255">Reverse</Capability>
+ </Channel>
+ <Channel Name="SMD Strobe">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="9">Blackout</Capability>
+  <Capability Min="10" Max="19">Pgm 1</Capability>
+  <Capability Min="20" Max="29">Pgm 2</Capability>
+  <Capability Min="30" Max="39">Pgm 3</Capability>
+  <Capability Min="40" Max="49">Pgm 4</Capability>
+  <Capability Min="50" Max="59">Pgm 5</Capability>
+  <Capability Min="60" Max="69">Pgm 6</Capability>
+  <Capability Min="70" Max="79">Pgm 7</Capability>
+  <Capability Min="80" Max="89">Pgm 8</Capability>
+  <Capability Min="90" Max="99">Pgm 9</Capability>
+  <Capability Min="100" Max="109">Pgm 10</Capability>
+  <Capability Min="110" Max="119">Pgm 11</Capability>
+  <Capability Min="120" Max="200">Full</Capability>
+  <Capability Min="201" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Lasers">
+  <Group Byte="0">Beam</Group>
+  <Capability Min="0" Max="9">Blackout</Capability>
+  <Capability Min="10" Max="49">Red</Capability>
+  <Capability Min="50" Max="89">Green</Capability>
+  <Capability Min="90" Max="129">Green/Red Alternating</Capability>
+  <Capability Min="130" Max="169">Red on, Green Strobe</Capability>
+  <Capability Min="170" Max="209">Green on, Red Strobe</Capability>
+  <Capability Min="210" Max="255">Red+Green Strobe</Capability>
+ </Channel>
+ <Channel Name="Lasers Strobe">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="4">Off</Capability>
+  <Capability Min="5" Max="254">Strobe Speed</Capability>
+  <Capability Min="255" Max="255">Sound</Capability>
+ </Channel>
+ <Channel Name="Laser Motion">
+  <Group Byte="0">Speed</Group>
+  <Capability Min="0" Max="4">Stop</Capability>
+  <Capability Min="5" Max="127">Clockwise</Capability>
+  <Capability Min="128" Max="133">Stop</Capability>
+  <Capability Min="134" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Mode Name="18Ch">
+  <Channel Number="0" ActsOn="17">Auto</Channel>
+  <Channel Number="1" ActsOn="17">Auto Speed</Channel>
+  <Channel Number="2">Wash 1</Channel>
+  <Channel Number="3">Wash 2</Channel>
+  <Channel Number="4">Wash 3</Channel>
+  <Channel Number="5">Wash 4</Channel>
+  <Channel Number="6">Wash 5</Channel>
+  <Channel Number="7">Wash 6</Channel>
+  <Channel Number="8">Wash 7</Channel>
+  <Channel Number="9">Wash 8</Channel>
+  <Channel Number="10">Wash Strobe</Channel>
+  <Channel Number="11">Derby</Channel>
+  <Channel Number="12">Derby Strobe</Channel>
+  <Channel Number="13">Derby Direction/Speed</Channel>
+  <Channel Number="14">SMD Strobe</Channel>
+  <Channel Number="15">Lasers</Channel>
+  <Channel Number="16">Lasers Strobe</Channel>
+  <Channel Number="17">Laser Motion</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

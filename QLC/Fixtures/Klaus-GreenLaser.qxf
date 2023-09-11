@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Green Laser</Model>
+ <Type>Laser</Type>
+ <Channel Name="Laser Status">
+  <Group Byte="0">Maintenance</Group>
+  <Capability Min="128" Max="191">Sound</Capability>
+  <Capability Min="192" Max="255">DMX</Capability>
+ </Channel>
+ <Channel Name="Pattern">
+  <Group Byte="0">Gobo</Group>
+  <Capability Min="8" Max="15">Circle 2</Capability>
+  <Capability Min="16" Max="23">Triangle</Capability>
+  <Capability Min="24" Max="31">Square</Capability>
+  <Capability Min="32" Max="39">Dashed Square</Capability>
+  <Capability Min="40" Max="47">Double Square</Capability>
+  <Capability Min="48" Max="55">Cross</Capability>
+  <Capability Min="56" Max="63">Pattern #8</Capability>
+  <Capability Min="64" Max="71">Pattern #9</Capability>
+  <Capability Min="72" Max="79">Pattern #10</Capability>
+  <Capability Min="80" Max="87">Spiral</Capability>
+  <Capability Min="88" Max="95">Pattern #12</Capability>
+  <Capability Min="96" Max="103">Pattern #13</Capability>
+  <Capability Min="104" Max="111">Pattern #14</Capability>
+  <Capability Min="112" Max="119">Pattern #15</Capability>
+  <Capability Min="120" Max="127">Pattern #16</Capability>
+  <Capability Min="128" Max="135">\/</Capability>
+  <Capability Min="136" Max="143">|\/|</Capability>
+  <Capability Min="144" Max="151">Pattern #19</Capability>
+  <Capability Min="152" Max="159">Line</Capability>
+  <Capability Min="160" Max="167">Line 2</Capability>
+  <Capability Min="168" Max="175">Line 3</Capability>
+  <Capability Min="176" Max="183">2 Lines</Capability>
+  <Capability Min="184" Max="191">+</Capability>
+  <Capability Min="192" Max="199">Pattern #25</Capability>
+  <Capability Min="200" Max="207">Pattern #26</Capability>
+  <Capability Min="208" Max="215">Pattern #27</Capability>
+  <Capability Min="216" Max="223">Four Squares</Capability>
+  <Capability Min="224" Max="231">Pattern #29</Capability>
+  <Capability Min="232" Max="239">Pattern #30</Capability>
+  <Capability Min="240" Max="247">Pattern #31</Capability>
+  <Capability Min="248" Max="255">Rays</Capability>
+ </Channel>
+ <Channel Name="Zoom">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="128" Max="169">Zoom In</Capability>
+  <Capability Min="170" Max="209">Zoom Out</Capability>
+  <Capability Min="210" Max="255">Zoom In/Out</Capability>
+ </Channel>
+ <Channel Name="Rotate Y">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="127">Angle</Capability>
+  <Capability Min="128" Max="191">Clockwise</Capability>
+  <Capability Min="192" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Rotate X">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="127">Angle</Capability>
+  <Capability Min="128" Max="191">Clockwise</Capability>
+  <Capability Min="192" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Rotate Z">
+  <Group Byte="0">Intensity</Group>
+  <Capability Min="0" Max="127">Angle</Capability>
+  <Capability Min="128" Max="191">Clockwise</Capability>
+  <Capability Min="192" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Position X">
+  <Group Byte="0">Pan</Group>
+  <Capability Min="0" Max="127">Angle</Capability>
+  <Capability Min="128" Max="191">Clockwise</Capability>
+  <Capability Min="192" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Position Y">
+  <Group Byte="0">Tilt</Group>
+  <Capability Min="0" Max="127">Angle</Capability>
+  <Capability Min="128" Max="191">Clockwise</Capability>
+  <Capability Min="192" Max="255">Anticlockwise</Capability>
+ </Channel>
+ <Mode Name="8Ch">
+  <Channel Number="0" ActsOn="7">Laser Status</Channel>
+  <Channel Number="1">Pattern</Channel>
+  <Channel Number="2">Zoom</Channel>
+  <Channel Number="3">Rotate Y</Channel>
+  <Channel Number="4">Rotate X</Channel>
+  <Channel Number="5">Rotate Z</Channel>
+  <Channel Number="6">Position X</Channel>
+  <Channel Number="7">Position Y</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>

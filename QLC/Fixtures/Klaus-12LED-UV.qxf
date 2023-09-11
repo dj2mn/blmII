@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.5</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>12LED UV</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Dimmer" Preset="IntensityDimmer"/>
+ <Channel Name="Group 1" Preset="IntensityUV"/>
+ <Channel Name="Group 2" Preset="IntensityUV"/>
+ <Channel Name="Group 3" Preset="IntensityUV"/>
+ <Channel Name="Group 4" Preset="IntensityUV"/>
+ <Channel Name="Preset">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="51" Max="100">Jump</Capability>
+  <Capability Min="101" Max="150">Grad</Capability>
+  <Capability Min="151" Max="200">Pulse</Capability>
+  <Capability Min="201" Max="255">Voice</Capability>
+ </Channel>
+ <Channel Name="Speed">
+  <Group Byte="0">Speed</Group>
+ </Channel>
+ <Mode Name="7CH">
+  <Channel Number="0" ActsOn="6">Dimmer</Channel>
+  <Channel Number="1">Group 1</Channel>
+  <Channel Number="2">Group 2</Channel>
+  <Channel Number="3">Group 3</Channel>
+  <Channel Number="4">Group 4</Channel>
+  <Channel Number="5">Preset</Channel>
+  <Channel Number="6">Speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="0" Width="0" Height="0" Depth="0"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+  <Technical PowerConsumption="0" DmxConnector="5-pin"/>
+ </Physical>
+</FixtureDefinition>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.12.6</Version>
+  <Author>Stewart Lawler</Author>
+ </Creator>
+ <Manufacturer>Klaus</Manufacturer>
+ <Model>Nutec (Ayra Alo 19) Dual Scanner</Model>
+ <Type>Scanner</Type>
+ <Channel Name="Right Mirror Rotate">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="1">Auto Clockwise</Capability>
+  <Capability Min="2" Max="199">Manual Position</Capability>
+  <Capability Min="200" Max="255">Auto Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Left Mirror Rotate">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="1">Auto Clockwise</Capability>
+  <Capability Min="2" Max="199">Manual Position</Capability>
+  <Capability Min="200" Max="255">Auto Anticlockwise</Capability>
+ </Channel>
+ <Channel Name="Mirror Rotation">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Speed</Capability>
+ </Channel>
+ <Channel Name="Right Pattern Select">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Blackout</Capability>
+  <Capability Min="5" Max="9">Auto Letter Run</Capability>
+  <Capability Min="10" Max="14">Rotating Pattern</Capability>
+  <Capability Min="15" Max="114">Letter Selection</Capability>
+  <Capability Min="145" Max="255">Pattern Select</Capability>
+ </Channel>
+ <Channel Name="Left Pattern Select">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="4">Blackout</Capability>
+  <Capability Min="5" Max="9">Auto Letter Run</Capability>
+  <Capability Min="10" Max="14">Rotating Pattern</Capability>
+  <Capability Min="15" Max="114">Letter Selection</Capability>
+  <Capability Min="145" Max="255">Pattern Select</Capability>
+ </Channel>
+ <Channel Name="Pattern Speed">
+  <Group Byte="0">Effect</Group>
+  <Capability Min="0" Max="255">Speed</Capability>
+ </Channel>
+ <Mode Name="6CH">
+  <Channel Number="0" ActsOn="5">Right Mirror Rotate</Channel>
+  <Channel Number="1">Left Mirror Rotate</Channel>
+  <Channel Number="2">Mirror Rotation</Channel>
+  <Channel Number="3">Right Pattern Select</Channel>
+  <Channel Number="4">Left Pattern Select</Channel>
+  <Channel Number="5">Pattern Speed</Channel>
+ </Mode>
+ <Physical>
+  <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>
+  <Dimensions Weight="4.5" Width="220" Height="375" Depth="160"/>
+  <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+  <Focus Type="Mirror" PanMax="0" TiltMax="0"/>
+  <Layout Width="2" Height="1"/>
+  <Technical PowerConsumption="30" DmxConnector="3-pin"/>
+ </Physical>
+</FixtureDefinition>
