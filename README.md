@@ -1,6 +1,6 @@
 # BLINKLICHTMASCHINE
 
-This repository contains a body of work around generating live visuals and live streaming [a band](https://only1klaus.com). We are using [QLC+](https://qlcplus.org) for DMX and Artnet control of stage lighting and video respectively. Video is generated on the fly by a custom [Vuo Pro](https://vuo.org) application. The ultimate design goal is to integrate these with [OBS](https://obsproject.com) to create a fully self-contained and remote controlled audio-visual system that can be set up to run automagically, without requiring a lighting or video operator.
+This repository contains a body of work around generating live visuals and live streaming for [a band](https://only1klaus.com). We are using [QLC+](https://qlcplus.org) for DMX and Artnet control of stage lighting and video respectively. Video is generated on the fly by a custom [Vuo Pro](https://vuo.org) application. The ultimate design goal is to integrate these with [OBS](https://obsproject.com) to create a fully self-contained and remote controlled audio-visual system that can be set up to run automagically, without requiring a lighting or video operator.
 
 We do these things not because they are hard, but because we are cheap and have no friends.
 
@@ -29,6 +29,8 @@ Meanwhile we had built up a small collection of affordable (i.e. very cheap) DMX
 
 <img alt="Blinklichtmaschine Architecture" src=images/diagram.png width=100%>
 
+(Missing from this image, the VERY IMPORTANT PART which is the MIDI master keyboard controller that will make All The Things Happen)
+More in-depth details to follow.
 
 ### Known Issues & Challenges
 
