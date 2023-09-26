@@ -29,15 +29,14 @@ Meanwhile we had built up a small collection of affordable (i.e. very cheap) DMX
 
 <img alt="Blinklichtmaschine Architecture" src=images/diagram.png width=100%>
 
-(Missing from this image, the VERY IMPORTANT PART which is the MIDI master keyboard controller that will make All The Things Happen)
-More in-depth details to follow.
+(Missing from this image, the VERY IMPORTANT PART which is the MIDI master keyboard controller that will make All The Things Happen) More in-depth details to come.
 
 ### Known Issues & Challenges
 
 - How best to control OBS scene switching. Options are 
-  - MIDI over TCP (unreliable in our experience)
+  - MIDI. Effective if OBS is running on the same machine as the DAW, but it makes more sense to run the video and audio/midi components on separate machines and Apple's MIDI over TCP implentation is too unreliable in our experience.
   - Remote keyboard macros (fiddly to integrate with a MIDI controller)
-  - Python websockets (best option for OBS, but so far as we're aware it's not something available natively in most DAWs)
+  - Python websockets (likely best option for OBS, but so far as we're aware it's not something available natively in most DAWs)
 
 ### Future Plans
 
@@ -55,6 +54,7 @@ Protocols:
 - [ArtNet](https://en.wikipedia.org/wiki/Art-Net)
 - [NDI](https://en.wikipedia.org/wiki/Network_Device_Interface)
 - [MIDI](https://en.wikipedia.org/wiki/MIDI)
+- [AVB](https://en.wikipedia.org/wiki/Audio_Video_Bridging)
 
 v1:
 - [Processing](https://processing.org)
