@@ -3,19 +3,19 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.6</Version>
+  <Version>4.12.7</Version>
   <Author>Stewart Lawler</Author>
  </Creator>
  <Manufacturer>Klaus</Manufacturer>
  <Model>Nutec (Ayra Alo 19) Dual Scanner</Model>
  <Type>Scanner</Type>
- <Channel Name="Right Mirror Rotate">
+ <Channel Name="Right Mirror Rotate" Default="128">
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="1">Auto Clockwise</Capability>
   <Capability Min="2" Max="199">Manual Position</Capability>
   <Capability Min="200" Max="255">Auto Anticlockwise</Capability>
  </Channel>
- <Channel Name="Left Mirror Rotate">
+ <Channel Name="Left Mirror Rotate" Default="128">
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="1">Auto Clockwise</Capability>
   <Capability Min="2" Max="199">Manual Position</Capability>
