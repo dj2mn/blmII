@@ -53,18 +53,18 @@
   <Capability Min="16" Max="255">Speed - Slow -&gt; Fast</Capability>
  </Channel>
  <Mode Name="7 Channel">
-  <Channel Number="0">Dimmer</Channel>
-  <Channel Number="1">Red</Channel>
-  <Channel Number="2">Green</Channel>
-  <Channel Number="3">Blue</Channel>
-  <Channel Number="4">Color Macro</Channel>
-  <Channel Number="5">Speed (Ch 5 [032-223]/Strobe</Channel>
-  <Channel Number="6">Mode</Channel>
+  <Channel Number="0" ActsOn="0">Dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Red</Channel>
+  <Channel Number="2" ActsOn="2">Green</Channel>
+  <Channel Number="3" ActsOn="3">Blue</Channel>
+  <Channel Number="4" ActsOn="4">Color Macro</Channel>
+  <Channel Number="5" ActsOn="5">Speed (Ch 5 [032-223]/Strobe</Channel>
+  <Channel Number="6" ActsOn="6">Mode</Channel>
  </Mode>
  <Mode Name="3 Channel">
-  <Channel Number="0">Red</Channel>
-  <Channel Number="1">Green</Channel>
-  <Channel Number="2">Blue</Channel>
+  <Channel Number="0" ActsOn="0">Red</Channel>
+  <Channel Number="1" ActsOn="1">Green</Channel>
+  <Channel Number="2" ActsOn="2">Blue</Channel>
  </Mode>
 <Physical>
    <Bulb Type="LED" ColourTemperature="0" Lumens="0"/>

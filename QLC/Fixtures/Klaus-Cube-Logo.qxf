@@ -42,22 +42,22 @@
   <Group Byte="0">Intensity</Group>
  </Channel>
  <Mode Name="Mode 1">
-  <Channel Number="0" ActsOn="15">Dimmer</Channel>
-  <Channel Number="1">Rotation Speed</Channel>
-  <Channel Number="2">Feedback Amount</Channel>
-  <Channel Number="3">Feedback Size</Channel>
-  <Channel Number="4">Kaleidoscope</Channel>
-  <Channel Number="5">RGB Offset</Channel>
-  <Channel Number="6">C1 Red</Channel>
-  <Channel Number="7">C1 Green</Channel>
-  <Channel Number="8">C1 Blue</Channel>
-  <Channel Number="9">C2 Red</Channel>
-  <Channel Number="10">C2 Green</Channel>
-  <Channel Number="11">C2 Blue</Channel>
-  <Channel Number="12">Wire Width</Channel>
-  <Channel Number="13">Pan</Channel>
-  <Channel Number="14">Tilt</Channel>
-  <Channel Number="15">Size</Channel>
+  <Channel Number="0" ActsOn="0">Dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Rotation Speed</Channel>
+  <Channel Number="2" ActsOn="2">Feedback Amount</Channel>
+  <Channel Number="3" ActsOn="3">Feedback Size</Channel>
+  <Channel Number="4" ActsOn="4">Kaleidoscope</Channel>
+  <Channel Number="5" ActsOn="5">RGB Offset</Channel>
+  <Channel Number="6" ActsOn="6">C1 Red</Channel>
+  <Channel Number="7" ActsOn="7">C1 Green</Channel>
+  <Channel Number="8" ActsOn="8">C1 Blue</Channel>
+  <Channel Number="9" ActsOn="9">C2 Red</Channel>
+  <Channel Number="10" ActsOn="10">C2 Green</Channel>
+  <Channel Number="11" ActsOn="11">C2 Blue</Channel>
+  <Channel Number="12" ActsOn="12">Wire Width</Channel>
+  <Channel Number="13" ActsOn="13">Pan</Channel>
+  <Channel Number="14" ActsOn="14">Tilt</Channel>
+  <Channel Number="15" ActsOn="15">Size</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

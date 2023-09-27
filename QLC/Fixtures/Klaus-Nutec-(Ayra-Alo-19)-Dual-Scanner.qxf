@@ -3,7 +3,7 @@
 <FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
  <Creator>
   <Name>Q Light Controller Plus</Name>
-  <Version>4.12.7</Version>
+  <Version>4.12.6</Version>
   <Author>Stewart Lawler</Author>
  </Creator>
  <Manufacturer>Klaus</Manufacturer>
@@ -45,13 +45,21 @@
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="255">Speed</Capability>
  </Channel>
- <Mode Name="6CH">
-  <Channel Number="0" ActsOn="5">Right Mirror Rotate</Channel>
-  <Channel Number="1">Left Mirror Rotate</Channel>
-  <Channel Number="2">Mirror Rotation</Channel>
-  <Channel Number="3">Right Pattern Select</Channel>
-  <Channel Number="4">Left Pattern Select</Channel>
-  <Channel Number="5">Pattern Speed</Channel>
+ <Mode Name="6 Channel">
+  <Channel Number="0" ActsOn="0">Right Mirror Rotate</Channel>
+  <Channel Number="1" ActsOn="1">Left Mirror Rotate</Channel>
+  <Channel Number="2" ActsOn="2">Mirror Rotation</Channel>
+  <Channel Number="3" ActsOn="3">Right Pattern Select</Channel>
+  <Channel Number="4" ActsOn="4">Left Pattern Select</Channel>
+  <Channel Number="5" ActsOn="5">Pattern Speed</Channel>
+  <Head>
+   <Channel>0</Channel>
+   <Channel>3</Channel>
+  </Head>
+  <Head>
+   <Channel>1</Channel>
+   <Channel>4</Channel>
+  </Head>
  </Mode>
  <Physical>
   <Bulb Type="LED" Lumens="0" ColourTemperature="0"/>

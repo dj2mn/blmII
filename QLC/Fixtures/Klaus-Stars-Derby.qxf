@@ -22,13 +22,13 @@
   <Group Byte="0">Intensity</Group>
   <Capability Min="0" Max="255">Program</Capability>
  </Channel>
- <Mode Name="6CH">
-  <Channel Number="0" ActsOn="5">Strobe</Channel>
-  <Channel Number="1">Red/Purple</Channel>
-  <Channel Number="2">Green/Orange</Channel>
-  <Channel Number="3">Blue/White</Channel>
-  <Channel Number="4">Motor Speed</Channel>
-  <Channel Number="5">Programs</Channel>
+<Mode Name="6CH">
+  <Channel Number="0" ActsOn="0">Strobe</Channel>
+  <Channel Number="1" ActsOn="1">Red/Purple</Channel>
+  <Channel Number="2" ActsOn="2">Green/Orange</Channel>
+  <Channel Number="3" ActsOn="3">Blue/White</Channel>
+  <Channel Number="4" ActsOn="4">Motor Speed</Channel>
+  <Channel Number="5" ActsOn="5">Programs</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

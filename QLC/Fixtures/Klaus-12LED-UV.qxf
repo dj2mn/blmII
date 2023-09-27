@@ -25,13 +25,13 @@
   <Group Byte="0">Speed</Group>
  </Channel>
  <Mode Name="7CH">
-  <Channel Number="0" ActsOn="6">Dimmer</Channel>
-  <Channel Number="1">Group 1</Channel>
-  <Channel Number="2">Group 2</Channel>
-  <Channel Number="3">Group 3</Channel>
-  <Channel Number="4">Group 4</Channel>
-  <Channel Number="5">Preset</Channel>
-  <Channel Number="6">Speed</Channel>
+  <Channel Number="0" ActsOn="0">Dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Group 1</Channel>
+  <Channel Number="2" ActsOn="2">Group 2</Channel>
+  <Channel Number="3" ActsOn="3">Group 3</Channel>
+  <Channel Number="4" ActsOn="4">Group 4</Channel>
+  <Channel Number="5" ActsOn="5">Preset</Channel>
+  <Channel Number="6" ActsOn="6">Speed</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>
