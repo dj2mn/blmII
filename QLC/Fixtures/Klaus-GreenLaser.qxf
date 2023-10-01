@@ -85,14 +85,14 @@
   <Capability Min="192" Max="255">Anticlockwise</Capability>
  </Channel>
  <Mode Name="8Ch">
-  <Channel Number="0" ActsOn="7">Laser Status</Channel>
-  <Channel Number="1">Pattern</Channel>
-  <Channel Number="2">Zoom</Channel>
-  <Channel Number="3">Rotate Y</Channel>
-  <Channel Number="4">Rotate X</Channel>
-  <Channel Number="5">Rotate Z</Channel>
-  <Channel Number="6">Position X</Channel>
-  <Channel Number="7">Position Y</Channel>
+  <Channel Number="0" ActsOn="0">Laser Status</Channel>
+  <Channel Number="1" ActsOn="1">Pattern</Channel>
+  <Channel Number="2" ActsOn="2">Zoom</Channel>
+  <Channel Number="3" ActsOn="3">Rotate Y</Channel>
+  <Channel Number="4" ActsOn="4">Rotate X</Channel>
+  <Channel Number="5" ActsOn="5">Rotate Z</Channel>
+  <Channel Number="6" ActsOn="6">Position X</Channel>
+  <Channel Number="7" ActsOn="7">Position Y</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

@@ -29,13 +29,13 @@
  <Channel Name="Green" Preset="IntensityGreen"/>
  <Channel Name="Blue" Preset="IntensityBlue"/>
  <Mode Name="Mode 1">
-  <Channel Number="0" ActsOn="6">Bank Select</Channel>
-  <Channel Number="1">Clip Select</Channel>
-  <Channel Number="2">FX Select</Channel>
-  <Channel Number="3">FX Depth</Channel>
-  <Channel Number="4">Red</Channel>
-  <Channel Number="5">Green</Channel>
-  <Channel Number="6">Blue</Channel>
+  <Channel Number="0" ActsOn="0">Bank Select</Channel>
+  <Channel Number="1" ActsOn="1">Clip Select</Channel>
+  <Channel Number="2" ActsOn="2">FX Select</Channel>
+  <Channel Number="3" ActsOn="3">FX Depth</Channel>
+  <Channel Number="4" ActsOn="4">Red</Channel>
+  <Channel Number="5" ActsOn="5">Green</Channel>
+  <Channel Number="6" ActsOn="6">Blue</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

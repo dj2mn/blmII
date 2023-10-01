@@ -9,7 +9,7 @@
  <Manufacturer>Showtec</Manufacturer>
  <Model>Hydrogen II</Model>
  <Type>Effect</Type>
- <Channel Name="Master dimmer" Preset="IntensityMasterDimmer"/>
+ <Channel Name="Master Dimmer" Preset="IntensityMasterDimmer"/>
  <Channel Name="Water Effect">
   <Group Byte="0">Effect</Group>
   <Capability Min="0" Max="127">Effect Speed</Capability>
@@ -25,10 +25,10 @@
   <Capability Min="10" Max="255">Strobe Speed</Capability>
  </Channel>
  <Mode Name="4Ch">
-  <Channel Number="0" ActsOn="3">Master dimmer</Channel>
-  <Channel Number="1">Water Effect</Channel>
-  <Channel Number="2">Colour Change</Channel>
-  <Channel Number="3">Strobe</Channel>
+  <Channel Number="0" ActsOn="0">Master Dimmer</Channel>
+  <Channel Number="1" ActsOn="1">Water Effect</Channel>
+  <Channel Number="2" ActsOn="2">Colour Change</Channel>
+  <Channel Number="3" ActsOn="3">Strobe</Channel>
  </Mode>
  <Physical>
   <Bulb Type="" Lumens="0" ColourTemperature="0"/>

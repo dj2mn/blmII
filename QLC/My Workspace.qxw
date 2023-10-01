@@ -10,12 +10,10 @@
   <InputOutputMap>
    <Universe Name="Universe 1" ID="0">
     <Input Plugin="MIDI" UID="IAC Driver" Line="1"/>
-    <Output Plugin="DMX USB" UID="DMXIS - DMX Output 1 - (S/N: ENVVVCOF)" Line="0">
-     <PluginParameters UniverseChannels="246"/>
-    </Output>
+    <Output Plugin="ArtNet" UID="10.10.25.236" Line="0"/>
    </Universe>
    <Universe Name="Universe 2" ID="1">
-    <Output Plugin="ArtNet" UID="172.20.10.4" Line="2"/>
+    <Output Plugin="ArtNet" UID="10.10.25.236" Line="0"/>
    </Universe>
    <Universe Name="Universe 3" ID="2" Passthrough="True"/>
    <Universe Name="Universe 4" ID="3"/>
@@ -71,6 +69,7 @@
    <Universe>0</Universe>
    <Address>112</Address>
    <Channels>14</Channels>
+   <ExcludeFade>0,1,2,3</ExcludeFade>
   </Fixture>
   <Fixture>
    <Manufacturer>Klaus</Manufacturer>
@@ -151,7 +150,7 @@
    <Universe>0</Universe>
    <Address>0</Address>
    <Channels>13</Channels>
-   <ExcludeFade>0,1,2,3,4</ExcludeFade>
+   <ExcludeFade>0,1,2,3</ExcludeFade>
   </Fixture>
   <Fixture>
    <Manufacturer>Klaus</Manufacturer>
@@ -253,6 +252,7 @@
    <Universe>0</Universe>
    <Address>220</Address>
    <Channels>13</Channels>
+   <ExcludeFade>0,1,2,3</ExcludeFade>
   </Fixture>
   <Fixture>
    <Manufacturer>Klaus</Manufacturer>
@@ -263,11 +263,12 @@
    <Universe>0</Universe>
    <Address>233</Address>
    <Channels>13</Channels>
+   <ExcludeFade>0,1,2,3</ExcludeFade>
   </Fixture>
   <Fixture>
    <Manufacturer>Klaus</Manufacturer>
    <Model>Nutec (Ayra Alo 19) Dual Scanner</Model>
-   <Mode>6CH</Mode>
+   <Mode>6 Channel</Mode>
    <ID>24</ID>
    <Name>Nutec (Ayra Alo 19) Dual Scanner</Name>
    <Universe>0</Universe>
@@ -793,7 +794,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="4294967294" FadeOut="4294967294" Duration="7719"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="7719"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1538,7 +1539,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="4294967294" FadeOut="4294967294" Duration="10637"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="10637"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1595,7 +1596,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="4294967294" FadeOut="4294967294" Duration="15637"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="15633"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -1964,7 +1965,7 @@
     <StartOffset>0</StartOffset>
    </Fixture>
    <PropagationMode>Parallel</PropagationMode>
-   <Speed FadeIn="4294967294" FadeOut="4294967294" Duration="15637"/>
+   <Speed FadeIn="0" FadeOut="0" Duration="15637"/>
    <Direction>Forward</Direction>
    <RunOrder>Loop</RunOrder>
    <Algorithm>Circle</Algorithm>
@@ -2774,7 +2775,7 @@
     </Appearance>
    </Label>
    <Label Caption="3D Object" ID="13">
-    <WindowState Visible="True" X="800" Y="695" Width="650" Height="40"/>
+    <WindowState Visible="True" X="800" Y="690" Width="650" Height="40"/>
     <Appearance>
      <FrameStyle>None</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3288,7 +3289,7 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
     <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="80">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="1">0</Channel>
     </Level>
     <Playback>
@@ -3352,7 +3353,7 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
     <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="105">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="1">13</Channel>
     </Level>
     <Playback>
@@ -3388,7 +3389,7 @@
     </Appearance>
     <SliderMode ValueDisplayStyle="Exact" ClickAndGoType="None" Monitor="true">Level</SliderMode>
     <Reset/>
-    <Level LowLimit="0" HighLimit="255" Value="39">
+    <Level LowLimit="0" HighLimit="255" Value="0">
      <Channel Fixture="1">1</Channel>
     </Level>
     <Playback>
@@ -3561,7 +3562,7 @@
     <Intensity Adjust="False">100</Intensity>
    </Button>
    <CueList Caption="Video Sets" ID="74">
-    <WindowState Visible="True" X="1545" Y="750" Width="300" Height="220"/>
+    <WindowState Visible="True" X="1580" Y="1175" Width="300" Height="220"/>
     <Appearance>
      <FrameStyle>Sunken</FrameStyle>
      <ForegroundColor>Default</ForegroundColor>
@@ -3663,7 +3664,7 @@
      <BackgroundImage>None</BackgroundImage>
      <Font>Default</Font>
     </Appearance>
-    <WindowState Visible="True" X="120" Y="1180" Width="400" Height="265"/>
+    <WindowState Visible="True" X="135" Y="960" Width="400" Height="265"/>
     <AllowChildren>True</AllowChildren>
     <AllowResize>True</AllowResize>
     <ShowHeader>True</ShowHeader>
@@ -4097,6 +4098,127 @@
      <SlidersMode>Steps</SlidersMode>
     </CueList>
    </Frame>
+   <SoloFrame Caption="Video Bank" ID="60">
+    <Appearance>
+     <FrameStyle>Sunken</FrameStyle>
+     <ForegroundColor>Default</ForegroundColor>
+     <BackgroundColor>Default</BackgroundColor>
+     <BackgroundImage>None</BackgroundImage>
+     <Font>Default</Font>
+    </Appearance>
+    <WindowState Visible="True" X="1485" Y="750" Width="415" Height="95"/>
+    <AllowChildren>True</AllowChildren>
+    <AllowResize>True</AllowResize>
+    <ShowHeader>True</ShowHeader>
+    <ShowEnableButton>True</ShowEnableButton>
+    <Mixing>False</Mixing>
+    <Collapsed>False</Collapsed>
+    <Disabled>False</Disabled>
+    <Button Caption="1" ID="61" Icon="">
+     <WindowState Visible="True" X="5" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="9"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="2" ID="62" Icon="">
+     <WindowState Visible="True" X="55" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="12"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="3" ID="90" Icon="">
+     <WindowState Visible="True" X="105" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="106"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="4" ID="91" Icon="">
+     <WindowState Visible="True" X="155" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="105"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="5" ID="92" Icon="">
+     <WindowState Visible="True" X="205" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="107"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="6" ID="93" Icon="">
+     <WindowState Visible="True" X="255" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="108"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="7" ID="94" Icon="">
+     <WindowState Visible="True" X="305" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="109"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+    <Button Caption="8" ID="95" Icon="">
+     <WindowState Visible="True" X="355" Y="40" Width="50" Height="50"/>
+     <Appearance>
+      <FrameStyle>None</FrameStyle>
+      <ForegroundColor>Default</ForegroundColor>
+      <BackgroundColor>Default</BackgroundColor>
+      <BackgroundImage>None</BackgroundImage>
+      <Font>Default</Font>
+     </Appearance>
+     <Function ID="110"/>
+     <Action>Toggle</Action>
+     <Intensity Adjust="False">100</Intensity>
+    </Button>
+   </SoloFrame>
   </Frame>
   <Properties>
    <Size Width="1920" Height="2080"/>
