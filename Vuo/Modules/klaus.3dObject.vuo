@@ -1,0 +1,66 @@
+/**
+ * @file
+ * @brief Cube Logo
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.3.2
+ * @lastSavedInVuoVersion 2.4.1
+ * @copyright Copyright © 2021 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+Changed [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="270,-360"];
+CombineTransforms [type="vuo.transform.combine" version="1.0.0" label="Combine Transforms|<refresh>refresh\l|<transforms>transforms\l|<composite>composite\r" pos="210,165" fillcolor="orange"];
+ConvertIntegerToRealNumber2 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="-135,345"];
+ConvertIntegerToRealNumber3 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="-360,-120"];
+ConvertRealTo3DPoint [type="vuo.type.real.point3d.xyz" version="1.0.0" label="Convert Real to 3D Point|<refresh>refresh\l|<x>x\l|<point3d>point3d\r" pos="30,525"];
+Curve [type="vuo.motion.curve.VuoPoint3d" version="2.0.0" label="Curve|<refresh>refresh\l|<time>time\l|<startPosition>startPosition\l|<endPosition>endPosition\l|<duration>duration\l|<curve>curve\l|<easing>easing\l|<loop>loop\l|<phase>phase\l|<value>value\r" pos="-225,165" _startPosition="\{\"x\":0.0,\"y\":0.0,\"z\":0.0\}" _endPosition="\{\"x\":0.0,\"y\":360.0,\"z\":0.0\}" _curve="\"linear\"" _easing="\"in\"" _loop="\"loop\"" _phase="0.0"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-120,-465" fillcolor="lime" _started_eventThrottling="enqueue"];
+Make3DTransform2 [type="vuo.transform.make" version="1.0.0" label="Rotate Cube|<refresh>refresh\l|<translation>translation\l|<rotation>rotation\l|<scale>scale\l|<transform>transform\r" pos="15,195" _translation="\{\"x\":0.0,\"y\":0.0,\"z\":0.0\}"];
+Make3DTransformPlaceCubeFartherFromCamera2 [type="vuo.transform.make" version="1.0.0" label="Tilt Cube|<refresh>refresh\l|<translation>translation\l|<rotation>rotation\l|<scale>scale\l|<transform>transform\r" pos="-15,75" _translation="\{\"x\":0.0,\"y\":0.0,\"z\":0.0\}" _rotation="\{\"x\":45.0,\"y\":0.0,\"z\":37.5\}" _scale="\{\"x\":1.000000,\"y\":1.000000,\"z\":1.000000\}"];
+MakeCube2 [type="vuo.scene.make.cube.1.VuoShader" version="1.1.0" label="Make Cube|<refresh>refresh\l|<transform>transform\l|<material>material\l|<cube>cube\r" pos="435,150" fillcolor="orange"];
+MakeList24 [type="vuo.list.make.2.VuoTransform" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="177,176" fillcolor="orange"];
+MakeList3 [type="vuo.list.make.2.VuoSceneObject" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="794,-49"];
+MakeTargetedPerspectiveCamera [type="vuo.scene.make.camera.perspective.target" version="1.0.0" label="Make Targeted Perspective Camera|<refresh>refresh\l|<name>name\l|<position>position\l|<target>target\l|<upDirection>upDirection\l|<fieldOfView>fieldOfView\l|<distanceMin>distanceMin\l|<distanceMax>distanceMax\l|<object>object\r" pos="615,-390" _name="\"camera\"" _position="\{\"x\":0.0,\"y\":0.0,\"z\":2.0\}" _target="\{\"x\":0.0,\"y\":0.0,\"z\":0.0\}" _upDirection="\{\"x\":0.,\"y\":1.,\"z\":0.\}" _fieldOfView="90.0" _distanceMin="0.1" _distanceMax="10.0"];
+RenderSceneToImage [type="vuo.scene.render.image2" version="2.0.0" label="Render Scene to Image|<refresh>refresh\l|<objects>objects\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<multisampling>multisampling\l|<cameraName>cameraName\l|<image>image\r|<depthImage>depthImage\r" pos="855,-60" _colorDepth="\"8bpc\"" _multisampling="\"4\""];
+Scale [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-480,180" _start="0." _end="255.0" _scaledStart="70.0" _scaledEnd="0.29999999999999999" _limitToRange="true"];
+Scale2 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="165,-255" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="1.0" _limitToRange="false"];
+ShadeWithWireframe [type="vuo.shader.make.wireframe" version="1.1.1" label="Make Wireframe Shader|<refresh>refresh\l|<frontColor>frontColor\l|<backColor>backColor\l|<width>width\l|<standoffWidth>standoffWidth\l|<showThirdEdge>showThirdEdge\l|<uniformWidth>uniformWidth\l|<shader>shader\r" pos="390,-285" _standoffWidth="0.0" _showThirdEdge="false" _uniformWidth="false"];
+ShowBackOf3DObject [type="vuo.scene.back" version="1.0.0" label="Show Back of 3D Object|<refresh>refresh\l|<object>object\l|<keepFront>keepFront\l|<backObject>backObject\r" pos="645,150" _keepFront="true"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Color1>Color1\r|<Color2>Color2\r|<Time>Time\r|<Speed>Speed\r|<Width>Width\r|<Size>Size\r|<OutputWidth>OutputWidth\r|<OutputHeight>OutputHeight\r" _Color1_type="VuoColor" _Color1="\{\"r\":0.60000002384185791,\"g\":0.80000001192092896,\"b\":0.60000002384185791,\"a\":1.0\}" _Color2_type="VuoColor" _Color2="\{\"r\":0.3,\"g\":0.4,\"b\":0.3,\"a\":1\}" _Time_type="VuoReal" _Speed_type="VuoInteger" _Width_type="VuoInteger" _Width="0" _Size_type="VuoReal" _OutputWidth_type="VuoInteger" _OutputWidth_suggestedMin="1" _OutputWidth_suggestedMax="4096" _OutputWidth_suggestedStep="256" _OutputWidth="1920" _OutputHeight_type="VuoInteger" _OutputHeight_suggestedMin="1" _OutputHeight_suggestedMax="4096" _OutputHeight_suggestedStep="256" _OutputHeight="1080"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Image>Image\l" _Image_type="VuoImage"];
+
+Changed:changed -> ShadeWithWireframe:frontColor;
+CombineTransforms:composite -> MakeCube2:transform;
+ConvertIntegerToRealNumber2:real -> Scale:value;
+ConvertIntegerToRealNumber3:real -> Scale2:value;
+ConvertRealTo3DPoint:point3d -> Make3DTransform2:scale;
+Curve:value -> Make3DTransform2:rotation;
+FireOnStart:started -> Make3DTransform2:translation;
+FireOnStart:started -> Make3DTransformPlaceCubeFartherFromCamera2:translation;
+FireOnStart:started -> MakeTargetedPerspectiveCamera:name;
+FireOnStart:started -> ShadeWithWireframe:frontColor;
+Make3DTransform2:transform -> MakeList24:2;
+Make3DTransformPlaceCubeFartherFromCamera2:transform -> MakeList24:1;
+MakeCube2:cube -> ShowBackOf3DObject:object;
+MakeList24:list -> CombineTransforms:transforms;
+MakeList3:list -> RenderSceneToImage:objects;
+MakeTargetedPerspectiveCamera:object -> MakeList3:2;
+PublishedInputs:Color1 -> ShadeWithWireframe:frontColor;
+PublishedInputs:Color2 -> ShadeWithWireframe:backColor;
+PublishedInputs:OutputHeight -> RenderSceneToImage:height;
+PublishedInputs:OutputWidth -> RenderSceneToImage:width;
+PublishedInputs:Size -> ConvertRealTo3DPoint:x;
+PublishedInputs:Speed -> ConvertIntegerToRealNumber2:integer;
+PublishedInputs:Time -> Curve:time;
+PublishedInputs:Time -> MakeCube2:transform [event=true];
+PublishedInputs:Width -> Changed:value;
+PublishedInputs:Width -> ConvertIntegerToRealNumber3:integer;
+RenderSceneToImage:image -> PublishedOutputs:Image;
+Scale2:scaledValue -> ShadeWithWireframe:width;
+Scale:scaledValue -> Curve:duration;
+ShadeWithWireframe:shader -> MakeCube2:material;
+ShowBackOf3DObject:backObject -> MakeList3:1;
+}

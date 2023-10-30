@@ -3,7 +3,7 @@
  *
  * @author stewart
  * @createdInVuoVersion 2.3.2
- * @lastSavedInVuoVersion 2.4.2
+ * @lastSavedInVuoVersion 2.4.3
  * @copyright Copyright © 2021 stewart
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
@@ -66,7 +66,7 @@ MakeList5 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refr
 MakeList6 [type="vuo.list.make.3.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<list>list\r" pos="44,656" _3="0"];
 MakeRGBColor3 [type="vuo.color.make.rgb" version="2.0.0" label="Make RGB Color|<refresh>refresh\l|<red>red\l|<green>green\l|<blue>blue\l|<opacity>opacity\l|<color>color\r" pos="690,-135" _opacity="1.0"];
 ObjectPlayer [type="klaus.objectPlayer" version="" label="Object Player|<refresh>refresh\l|<DMXIn>DMXIn\l|<DMXChannel>DMXChannel\l|<Time>Time\l|<Width>Width\l|<Height>Height\l|<DataPath>DataPath\l|<Image>Image\l|<Out>Out\r|<IsRunning>IsRunning\r" pos="-1350,1365"];
-PlayMovie [type="vuo.video.play" version="2.0.3" label="Play Movie|<refresh>refresh\l|<play>play\l|<pause>pause\l|<setTime>setTime\l|<url>url\l|<loop>loop\l|<playbackRate>playbackRate\l|<optimization>optimization\l|<decodedVideo>decodedVideo\r|<decodedAudio>decodedAudio\r|<finishedPlayback>finishedPlayback\r" pos="-345,555" _setTime="\"\"" _loop="\"loop\"" _optimization="\"auto\"" _decodedVideo_eventThrottling="drop" _decodedAudio_eventThrottling="enqueue" _finishedPlayback_eventThrottling="enqueue"];
+PlayMovie [type="vuo.video.play" version="2.1.0" label="Play Movie|<refresh>refresh\l|<play>play\l|<pause>pause\l|<setTime>setTime\l|<url>url\l|<loop>loop\l|<playbackRate>playbackRate\l|<optimization>optimization\l|<decodedVideo>decodedVideo\r|<decodedAudio>decodedAudio\r|<finishedPlayback>finishedPlayback\r" pos="-345,555" _setTime="\"\"" _loop="\"loop\"" _optimization="\"auto\"" _decodedVideo_eventThrottling="drop" _decodedAudio_eventThrottling="enqueue" _finishedPlayback_eventThrottling="enqueue"];
 ReceiveArtNetMessages [type="vuo.artnet.receive" version="1.0.1" label="Receive Art-Net Messages|<refresh>refresh\l|<device>device\l|<receivedDmx>receivedDmx\r" pos="-2100,1095" fillcolor="magenta" _receivedDmx_eventThrottling="drop"];
 ReceiveNDIVideo [type="vuo.ndi.receive" version="1.0.0" label="Receive NDI Video|<refresh>refresh\l|<source>source\l|<bandwidth>bandwidth\l|<receiverName>receiverName\l|<sendMetadata>sendMetadata\l|<setTallyProgram>setTallyProgram\l|<setTallyPreview>setTallyPreview\l|<receivedVideoFrame>receivedVideoFrame\r|<receivedMetadata>receivedMetadata\r|<urlChanged>urlChanged\r" pos="-465,-60" _bandwidth="3" _setTallyProgram="false" _setTallyPreview="false" _receivedVideoFrame_eventThrottling="drop" _receivedMetadata_eventThrottling="enqueue" _urlChanged_eventThrottling="enqueue"];
 RenderImageToWindow [type="vuo.image.render.window2" version="4.0.0" label="Render Image to Window|<refresh>refresh\l|<image>image\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="1950,735" _updatedWindow_eventThrottling="enqueue"];
@@ -141,6 +141,7 @@ DMXBuffer83:Out8 -> ConvertIntegerToRealNumber27:integer [style=invis];
 FireOnDisplayRefresh:requestedFrame -> ObjectPlayer:Time;
 FireOnStart2:started -> ChangeFullscreenStatus:windowDescription [style=invis];
 FireOnStart2:started -> HoldValue2:update [style=invis];
+FireOnStart2:started -> KeepSystemAwake:keepSystemAwake;
 FireOnStart2:started -> ListFiles2:folder;
 FireOnStart2:started -> ListFiles:folder [style=invis];
 FireOnStart2:started -> MakeList15:1 [style=invis];
