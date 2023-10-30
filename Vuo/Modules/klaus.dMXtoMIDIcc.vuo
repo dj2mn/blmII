@@ -1,0 +1,25 @@
+/**
+ * @file
+ * @brief DMXtoMIDIcc
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.3
+ * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+MakeController [type="vuo.midi.make.controller" version="1.0.0" label="Make Controller|<refresh>refresh\l|<channel>channel\l|<controllerNumber>controllerNumber\l|<value>value\l|<controller>controller\r" pos="135,60"];
+Scale [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="-60,30" _start="0" _end="255" _scaledStart="0" _scaledEnd="127" _limitToRange="false"];
+SendMIDIEvent [type="vuo.midi.send" version="2.1.0" label="Send MIDI Event|<refresh>refresh\l|<sendNote>sendNote\l|<sendController>sendController\l|<sendPitchBend>sendPitchBend\l|<device>device\l" pos="330,135"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<DMXin>DMXin\r|<Channel>Channel\r|<CC>CC\r|<Device>Device\r" _DMXin_type="VuoInteger" _Channel_type="VuoInteger" _Channel_suggestedMin="1" _Channel_suggestedMax="16" _Channel="1" _CC_type="VuoInteger" _CC_suggestedMin="0" _CC_suggestedMax="127" _CC="1" _Device_type="VuoMidiOutputDevice" _Device="\{\"name\":\"IAC Driver Bus 1\"\}"];
+
+MakeController:controller -> SendMIDIEvent:sendController;
+PublishedInputs:CC -> MakeController:controllerNumber;
+PublishedInputs:Channel -> MakeController:channel;
+PublishedInputs:DMXin -> Scale:value;
+PublishedInputs:Device -> SendMIDIEvent:device;
+Scale:scaledValue -> MakeController:value;
+}
