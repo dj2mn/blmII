@@ -4,7 +4,7 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.1
- * @lastSavedInVuoVersion 2.4.2
+ * @lastSavedInVuoVersion 2.4.3
  * @copyright Copyright © 2022 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
@@ -36,8 +36,8 @@ LimitToRange [type="vuo.math.limitToRange.VuoInteger" version="1.0.1" label="Lim
 MakeCrosshatchImage [type="vuo.image.crosshatch" version="1.0.0" label="Make Crosshatch Image|<refresh>refresh\l|<image>image\l|<backgroundColor>backgroundColor\l|<lineColor>lineColor\l|<threshold>threshold\l|<width>width\l|<center>center\l|<coverage>coverage\l|<crosshatchedImage>crosshatchedImage\r" pos="1395,1710" _center="\{\"x\":-0.51999998092651367,\"y\":0.72000002861022949\}" _coverage="0.32000000000000001"];
 MakeKaleidoscopeImage2 [type="vuo.image.kaleidoscope" version="1.0.1" label="Make Kaleidoscope Image|<refresh>refresh\l|<image>image\l|<sides>sides\l|<angle>angle\l|<bladeCenter>bladeCenter\l|<imageCenter>imageCenter\l|<reflectOddSides>reflectOddSides\l|<reflectedImage>reflectedImage\r" pos="1395,945" _angle="0." _bladeCenter="\{\"x\":0.0,\"y\":0.0\}" _imageCenter="\{\"x\":0.0,\"y\":0.0\}" _reflectOddSides="true"];
 MakeList36 [type="vuo.list.make.2.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="867,1931" _2="1"];
+MapPalettes [type="klaus.mapPalettes" version="" label="MapPalettes|<refresh>refresh\l|<Image>Image\l|<Select>Select\l|<Depth>Depth\l|<Color1>Color1\l|<Color2>Color2\l|<QuantizedImage>QuantizedImage\r" pos="1440,555" _Depth="8"];
 PixellateImage [type="vuo.image.pixellate" version="1.2.0" label="Pixellate Image|<refresh>refresh\l|<image>image\l|<pixelShape>pixelShape\l|<pixelSize>pixelSize\l|<center>center\l|<pixellatedImage>pixellatedImage\r" pos="1425,1365" _pixelShape="\"rectangle\"" _center="\{\"x\":0.0,\"y\":0.0\}"];
-PosterizeImage [type="vuo.image.posterize" version="1.0.1" label="Posterize Image|<refresh>refresh\l|<image>image\l|<colors>colors\l|<posterizedImage>posterizedImage\r" pos="1425,555"];
 RoundDown [type="vuo.math.roundDown" version="2.0.0" label="Round Down|<refresh>refresh\l|<real>real\l|<roundedDown>roundedDown\r" pos="795,1755"];
 Scale10 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="990,1020" _start="0" _end="255" _scaledStart="1" _scaledEnd="16" _limitToRange="false"];
 Scale11 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="960,1395" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
@@ -49,7 +49,7 @@ Scale16 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>ref
 Scale17 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1155,1260" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
 Scale18 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="960,1575" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="0.80000000000000004" _limitToRange="false"];
 Scale19 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="975,1590" _start="0.0" _end="255.0" _scaledStart="0.01" _scaledEnd="0.050000000000000003" _limitToRange="false"];
-Scale2 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,630" _start="0" _end="255" _scaledStart="4" _scaledEnd="32" _limitToRange="false"];
+Scale2 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,630" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
 Scale20 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="975,1740" _start="0.0" _end="63.0" _scaledStart="0.0" _scaledEnd="2.0" _limitToRange="false"];
 Scale9 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1290,135" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
 SelectInput [type="vuo.select.in.8.VuoImage" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="1650,315"];
@@ -97,10 +97,12 @@ LimitToRange:limitedValue -> ConvertIntegerToRealNumber:integer;
 MakeCrosshatchImage:crosshatchedImage -> SelectInput:option8;
 MakeKaleidoscopeImage2:reflectedImage -> SelectInput:option4;
 MakeList36:list -> Add10:values;
+MapPalettes:QuantizedImage -> SelectInput:option2;
 PixellateImage:pixellatedImage -> SelectInput:option6;
-PosterizeImage:posterizedImage -> SelectInput:option2;
 PublishedInputs:Color1 -> MakeCrosshatchImage:backgroundColor;
+PublishedInputs:Color1 -> MapPalettes:Color1;
 PublishedInputs:Color2 -> MakeCrosshatchImage:lineColor;
+PublishedInputs:Color2 -> MapPalettes:Color2;
 PublishedInputs:EffectDepth -> Changed13:value;
 PublishedInputs:EffectDepth -> HoldValue6:value;
 PublishedInputs:Image -> SelectOutput:in;
@@ -118,13 +120,13 @@ Scale17:scaledValue -> FrostImage:iterations;
 Scale18:scaledValue -> MakeCrosshatchImage:threshold;
 Scale19:scaledValue -> MakeCrosshatchImage:width;
 Scale20:scaledValue -> ConvertRealToScale:scale;
-Scale2:scaledValue -> PosterizeImage:colors;
+Scale2:scaledValue -> MapPalettes:Select;
 Scale9:scaledValue -> SelectInput:which;
 Scale9:scaledValue -> SelectOutput:which;
 SelectInput2:out -> BlendImageWithFeedback3:feedbackBlendMode;
 SelectInput:out -> PublishedOutputs:Out;
 SelectOutput:option1 -> SelectInput:option1;
-SelectOutput:option2 -> PosterizeImage:image;
+SelectOutput:option2 -> MapPalettes:Image;
 SelectOutput:option3 -> AddAnalogImageDistortion:image;
 SelectOutput:option4 -> MakeKaleidoscopeImage2:image;
 SelectOutput:option5 -> FrostImage:image;
