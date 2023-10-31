@@ -1,0 +1,64 @@
+/**
+ * @file
+ * @brief MapPalettes
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.3
+ * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="165,15" _started_eventThrottling="enqueue"];
+MakeList12 [type="vuo.list.make.4.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<list>list\r" pos="27,266" _4="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeList13 [type="vuo.list.make.2.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="27,416"];
+MakeList14 [type="vuo.list.make.4.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<list>list\r" pos="27,341" _4="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeList15 [type="vuo.list.make.2.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="27,476"];
+MakeList16 [type="vuo.list.make.5.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<list>list\r" pos="27,536" _2="\{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0\}" _3="\{\"r\":0.0,\"g\":1.0,\"b\":0.0,\"a\":1.0\}" _4="\{\"r\":0.0,\"g\":0.0,\"b\":1.0,\"a\":1.0\}"];
+MakeList17 [type="vuo.list.make.8.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<8>8\l|<list>list\r" pos="27,626" _2="\{\"r\":1.0,\"g\":0.0,\"b\":0.0,\"a\":1.0\}" _3="\{\"r\":0.0,\"g\":1.0,\"b\":0.0,\"a\":1.0\}" _4="\{\"r\":0.0,\"g\":0.0,\"b\":1.0,\"a\":1.0\}" _5="\{\"r\":0.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}" _6="\{\"r\":1.0,\"g\":1.0,\"b\":0.0,\"a\":1.0\}" _7="\{\"r\":1.0,\"g\":0.0,\"b\":1.0,\"a\":1.0\}" _8="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakeList2 [type="vuo.list.make.2.VuoColor" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="27,206" _2="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}"];
+MakePaletteFromImage [type="vuo.color.palette.make.image" version="1.0.0" label="Make Palette from Image|<refresh>refresh\l|<image>image\l|<colors>colors\l|<palette>palette\r" pos="0,120"];
+MapImageToPalette [type="vuo.image.color.palette" version="1.0.0" label="Map Image to Palette|<refresh>refresh\l|<image>image\l|<palette>palette\l|<dithering>dithering\l|<ditheringIntensity>ditheringIntensity\l|<quantizedImage>quantizedImage\r" pos="510,90" _dithering="20" _ditheringIntensity="0.25"];
+SelectInputList [type="vuo.select.in.list.8.VuoColor" version="2.0.0" label="Select Input List|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="315,105"];
+ShareList [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,195"];
+ShareList2 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,255"];
+ShareList3 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,405"];
+ShareList4 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,330"];
+ShareList5 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,465"];
+ShareList6 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,525"];
+ShareList7 [type="vuo.data.share.list.VuoColor" version="1.0.0" label="Share List|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,615"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Image>Image\r|<Select>Select\r|<Depth>Depth\r|<Color1>Color1\r|<Color2>Color2\r" _Image_type="VuoImage" _Select_type="VuoInteger" _Select_suggestedMin="1" _Select_suggestedMax="8" _Depth_type="VuoInteger" _Depth_suggestedMin="1" _Depth_suggestedMax="256" _Depth="8" _Color1_type="VuoColor" _Color1="\{\"r\":1.0,\"g\":1.0,\"b\":1.0,\"a\":1.0\}" _Color2_type="VuoColor"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<QuantizedImage>QuantizedImage\l" _QuantizedImage_type="VuoImage"];
+
+MakeList12:list -> ShareList2:value;
+MakeList13:list -> ShareList3:value;
+MakeList14:list -> ShareList4:value;
+MakeList15:list -> ShareList5:value;
+MakeList16:list -> ShareList6:value;
+MakeList17:list -> ShareList7:value;
+MakeList2:list -> ShareList:value;
+MakePaletteFromImage:palette -> SelectInputList:option1;
+MapImageToPalette:quantizedImage -> PublishedOutputs:QuantizedImage;
+PublishedInputs:Color1 -> MakeList12:2;
+PublishedInputs:Color1 -> MakeList13:1;
+PublishedInputs:Color1 -> MakeList14:3;
+PublishedInputs:Color1 -> MakeList15:2;
+PublishedInputs:Color2 -> MakeList12:3;
+PublishedInputs:Color2 -> MakeList13:2;
+PublishedInputs:Color2 -> MakeList14:2;
+PublishedInputs:Color2 -> MakeList15:1;
+PublishedInputs:Depth -> MakePaletteFromImage:colors;
+PublishedInputs:Image -> MakePaletteFromImage:image;
+PublishedInputs:Image -> MapImageToPalette:image;
+PublishedInputs:Select -> SelectInputList:which;
+SelectInputList:out -> MapImageToPalette:palette;
+ShareList2:sameValue -> SelectInputList:option3;
+ShareList3:sameValue -> SelectInputList:option5;
+ShareList4:sameValue -> SelectInputList:option4;
+ShareList5:sameValue -> SelectInputList:option6;
+ShareList6:sameValue -> SelectInputList:option7;
+ShareList7:sameValue -> SelectInputList:option8;
+ShareList:sameValue -> SelectInputList:option2;
+}
