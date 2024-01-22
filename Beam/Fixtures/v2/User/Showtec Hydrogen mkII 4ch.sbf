@@ -1,0 +1,57 @@
+{
+  "modulation": {
+    "dim": {
+      "multiplyBy": "volume",
+      "attribute": "Dim",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "effectdepth": {
+      "attribute": "Water Effect",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "colorchange": {
+      "attribute": "Color Change",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "strobe": {
+      "attribute": "Strobe",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Dim": {
+      "address": 1,
+      "default": 0
+    },
+    "Water Effect": {
+      "address": 2,
+      "slots": {
+        "speed": 0,
+        "inactive": 128
+      },
+      "default": 0
+    },
+    "Color Change": {
+      "address": 3,
+      "slots": {
+        "speed": 0,
+        "inactive": 128
+      },
+      "default": 128
+    },
+    "Strobe": {
+      "address": 4,
+      "slots": {
+        "inactive": 0,
+        "speed": 10
+      },
+      "default": 0
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}

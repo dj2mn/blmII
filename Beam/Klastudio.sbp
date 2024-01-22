@@ -1,0 +1,596 @@
+{
+  "version": 1,
+  "fixtures": [
+    {
+      "id": "cbcfe0d19dfe4bb891370b58719c28eb",
+      "name": "Par 1",
+      "type": "CREE Slim Par LED Tri 7ch",
+      "universe": 1,
+      "channel": 33,
+      "tags": [
+        {
+          "name": "par1",
+          "index": 60
+        },
+        {
+          "name": "pars",
+          "index": 60
+        },
+        {
+          "name": "oddpar",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "4122f7a4291b4883948ac481dec31bbf",
+      "name": "Par 2",
+      "type": "CREE Slim Par LED Tri 7ch",
+      "universe": 1,
+      "channel": 49,
+      "tags": [
+        {
+          "name": "evenpar",
+          "index": 60
+        },
+        {
+          "name": "par2",
+          "index": 61
+        },
+        {
+          "name": "pars",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "dece6fad483d456099f47bda050e0676",
+      "name": "Par 3",
+      "type": "Generic Par RGB LED 7ch",
+      "universe": 1,
+      "channel": 65,
+      "tags": [
+        {
+          "name": "par3",
+          "index": 62
+        },
+        {
+          "name": "oddpar",
+          "index": 60
+        },
+        {
+          "name": "pars",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "4979d9a19c9b4a81955eb58024163cdc",
+      "name": "Par 4",
+      "type": "Generic Par RGB LED 7ch",
+      "universe": 1,
+      "channel": 73,
+      "tags": [
+        {
+          "name": "evenpar",
+          "index": 60
+        },
+        {
+          "name": "pars",
+          "index": 60
+        },
+        {
+          "name": "par4",
+          "index": 63
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "0e1edd7fd2ec4dcc81713057f2a458c1",
+      "name": "Par 5",
+      "type": "CREE Slim Par LED Tri 7ch",
+      "universe": 1,
+      "channel": 81,
+      "tags": [
+        {
+          "name": "par5",
+          "index": 64
+        },
+        {
+          "name": "pars",
+          "index": 60
+        },
+        {
+          "name": "oddpar",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "08fe727351b14e73a90da3bef02db2a1",
+      "name": "Par 6",
+      "type": "Generic Par RGB LED 7ch",
+      "universe": 1,
+      "channel": 88,
+      "tags": [
+        {
+          "name": "evenpar",
+          "index": 60
+        },
+        {
+          "name": "pars",
+          "index": 60
+        },
+        {
+          "name": "par6",
+          "index": 65
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "12a994714be24e54b73f8d0508307912",
+      "name": "Spot 1",
+      "type": "MiNSpot 13ch",
+      "universe": 1,
+      "channel": 234,
+      "tags": [
+        {
+          "name": "spot1",
+          "index": 60
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 134,
+          "upper": 8
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "8d498c766a914f7895a5878e44823cf2",
+      "name": "Spot 2",
+      "type": "MiNSpot 13ch",
+      "universe": 1,
+      "channel": 221,
+      "tags": [
+        {
+          "name": "spots",
+          "index": 73
+        },
+        {
+          "name": "spot2",
+          "index": 61
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "4ad682bebca240879b0a3605adff338b",
+      "name": "Spot 3",
+      "type": "Chauvet MiNSpot RGBW 14ch",
+      "universe": 1,
+      "channel": 113,
+      "tags": [
+        {
+          "name": "spot3",
+          "index": 62
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 134,
+          "upper": 7
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "da4655d8208146c186efb4e7e6924d5e",
+      "name": "Spot 4",
+      "type": "MiNSpot 13ch",
+      "universe": 1,
+      "channel": 17,
+      "tags": [
+        {
+          "name": "spot4",
+          "index": 63
+        },
+        {
+          "name": "spots",
+          "index": 75
+        }
+      ],
+      "ranges": [
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "ad944f7f7eaf4f27a3b2375454921b29",
+      "name": "Spot 5",
+      "type": "MiNSpot 13ch",
+      "universe": 1,
+      "channel": 1,
+      "tags": [
+        {
+          "name": "spots",
+          "index": 76
+        },
+        {
+          "name": "spot5",
+          "index": 64
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 0,
+          "upper": 255
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "720ac6c85172480abe6e8e718849bf21",
+      "name": "Wash 1 Wall",
+      "type": "AVE Cobra Wash RGBW 12ch",
+      "universe": 1,
+      "channel": 161,
+      "tags": [
+        {
+          "name": "washes",
+          "index": 60
+        },
+        {
+          "name": "wash-wall",
+          "index": 60
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 0,
+          "upper": 199
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "1e2a8bab93944120a07fe43bc3aa6380",
+      "name": "Wash 2 Floor",
+      "type": "AVE Cobra Wash RGBW 12ch",
+      "universe": 1,
+      "channel": 177,
+      "tags": [
+        {
+          "name": "wash-floor",
+          "index": 61
+        },
+        {
+          "name": "washes",
+          "index": 60
+        }
+      ],
+      "ranges": [
+        {
+          "name": "tilt",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "pan",
+          "lower": 0,
+          "upper": 255
+        },
+        {
+          "name": "dim",
+          "lower": 0,
+          "upper": 199
+        }
+      ],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "90ea2f4dc4e74ccc85c44fb239845262",
+      "name": "",
+      "type": "12LED UV",
+      "universe": 1,
+      "channel": 193,
+      "tags": [
+        {
+          "name": "uv",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "b466cc8b8f7b4963ae046a4544bf03d1",
+      "name": "",
+      "type": "12LED UV",
+      "universe": 1,
+      "channel": 200,
+      "tags": [
+        {
+          "name": "uv",
+          "index": 61
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "f097f2394102451fb8f530080368f45c",
+      "name": "",
+      "type": "12LED UV",
+      "universe": 1,
+      "channel": 207,
+      "tags": [
+        {
+          "name": "uv",
+          "index": 62
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "dccf75f9c1f8488a9f94f4df9f41c84b",
+      "name": "",
+      "type": "12LED UV",
+      "universe": 1,
+      "channel": 214,
+      "tags": [
+        {
+          "name": "uv",
+          "index": 63
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "430ff1d35d9f47eb8b5cd46d718dd7a0",
+      "name": "Green Laser",
+      "type": "CRLite 100mw Laser 8ch",
+      "universe": 1,
+      "channel": 97,
+      "tags": [
+        {
+          "name": "lasers",
+          "index": 60
+        },
+        {
+          "name": "greenlaser",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "2dded96ed2f64339b1ccf0ae0b0d2e44",
+      "name": "Blue Laser",
+      "type": "CRLite 100mw Laser 8ch",
+      "universe": 1,
+      "channel": 40,
+      "tags": [
+        {
+          "name": "bluelaser",
+          "index": 60
+        },
+        {
+          "name": "lasers",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "a409e7c2eb414526b25cb22bbf846ce9",
+      "name": "",
+      "type": "Stars Derby",
+      "universe": 1,
+      "channel": 148,
+      "tags": [
+        {
+          "name": "derbys",
+          "index": 60
+        },
+        {
+          "name": "derby-stars",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "06448ce83122456e8af0822f2fe14781",
+      "name": "Mixlaser II",
+      "type": "MixlaserII 18ch",
+      "universe": 1,
+      "channel": 129,
+      "tags": [
+        {
+          "name": "mixlaser",
+          "index": 60
+        },
+        {
+          "name": "derby-mixlaser",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "8481e432fdbd46349f7551b74823bc2c",
+      "name": "Waterlight",
+      "type": "Showtec Hydrogen mkII 4ch",
+      "universe": 1,
+      "channel": 109,
+      "tags": [
+        {
+          "name": "waterlight",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "364ac3642a974159a13f6663b1557aea",
+      "name": "",
+      "type": "Nutec Scanner",
+      "universe": 1,
+      "channel": 154,
+      "tags": [
+        {
+          "name": "scanner",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "44c4b4f1ff654540917bf227de326c83",
+      "name": "",
+      "type": "Video Player 8ch",
+      "universe": 2,
+      "channel": 257,
+      "tags": [
+        {
+          "name": "video",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    },
+    {
+      "id": "0dc91723b8044e46b89c4ec685ad238a",
+      "name": "",
+      "type": "Object Player 18ch",
+      "universe": 2,
+      "channel": 265,
+      "tags": [
+        {
+          "name": "3dobject",
+          "index": 60
+        }
+      ],
+      "ranges": [],
+      "testOn": false,
+      "children": []
+    }
+  ]
+}

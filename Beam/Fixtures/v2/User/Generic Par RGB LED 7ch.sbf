@@ -1,0 +1,64 @@
+{
+  "modulation": {
+    "strobe": {
+      "attribute": "Strobe Rate",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "preset": {
+      "attribute": "Preset",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "speed": {
+      "attribute": "Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Dim": {
+      "address": 1
+    },
+    "Strobe Rate": {
+      "address": 2,
+      "default": 0
+    },
+    "Preset": {
+      "address": 3,
+      "default": 0
+    },
+    "Speed": {
+      "address": 4,
+      "default": 0
+    },
+    "Red": {
+      "address": 5
+    },
+    "Green": {
+      "address": 6
+    },
+    "Blue": {
+      "address": 7
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {
+    "dim": {
+      "attribute": "Dim",
+      "rgb": "max"
+    },
+    "red": {
+      "attribute": "Red",
+      "rgb": "red_normalized"
+    },
+    "blue": {
+      "attribute": "Blue",
+      "rgb": "blue_normalized"
+    },
+    "green": {
+      "attribute": "Green",
+      "rgb": "green_normalized"
+    }
+  }
+}

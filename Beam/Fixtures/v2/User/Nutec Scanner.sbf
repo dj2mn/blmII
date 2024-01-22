@@ -1,0 +1,86 @@
+{
+  "modulation": {
+    "mirrorrotationspeed": {
+      "attribute": "Mirror Rotation Speed",
+      "mergeMode": "weightedaverage",
+      "fallback": "none"
+    },
+    "patternselectspeed": {
+      "attribute": "Auto Pattern Speed",
+      "mergeMode": "weightedaverage",
+      "fallback": "none"
+    },
+    "leftpattern": {
+      "attribute": "Left Pattern",
+      "mergemode": "addition",
+      "fallback": "none"
+    },
+    "rightpattern": {
+      "attribute": "Right Pattern",
+      "mergemode": "addition",
+      "fallback": "none"
+    },
+    "leftmirror": {
+      "attribute": "Left Mirror Rotation",
+      "mergemode": "addition",
+      "fallback": "none"
+    },
+    "rightmirror": {
+      "attribute": "Right Mirror Rotation",
+      "mergemode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Left Mirror Rotation": {
+      "address": 1,
+      "default": 128,
+      "slots": {
+        "autoclockwise": 0,
+        "staticposition": 2,
+        "autoanticlockwise": 200
+      }
+    },
+    "Right Mirror Rotation": {
+      "address": 2,
+      "default": 128,
+      "slots": {
+        "autoclockwise": 0,
+        "staticposition": 2,
+        "autoanticlockwise": 200
+      }
+    },
+    "Mirror Rotation Speed": {
+      "address": 3,
+      "default": 128
+    },
+    "Left Pattern": {
+      "address": 4,
+      "default": 0,
+      "slots": {
+        "blackout": 0,
+        "autoletter": 5,
+        "rotatingpattern": 10,
+        "letterselection": 15,
+        "patternselection": 145
+      }
+    },
+    "Right Pattern": {
+      "address": 5,
+      "default": 0,
+      "slots": {
+        "blackout": 0,
+        "autoletter": 5,
+        "rotatingpattern": 10,
+        "letterselection": 15,
+        "patternselection": 145
+      }
+    },
+    "Auto Pattern Speed": {
+      "address": 6,
+      "default": 0
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}

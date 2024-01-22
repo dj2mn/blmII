@@ -1,0 +1,90 @@
+{
+  "attributes": {
+    "Auto Modes": {
+      "address": 12,
+      "default": 0
+    },
+    "Blue": {
+      "address": 9,
+      "default": 0
+    },
+    "Color Macro": {
+      "address": 11,
+      "default": 0
+    },
+    "Dim": {
+      "address": 6
+    },
+    "Green": {
+      "address": 8,
+      "default": 0
+    },
+    "Pan": {
+      "addresscoarse": 1,
+      "addressfine": 2,
+      "default": 128
+    },
+    "Red": {
+      "address": 7,
+      "default": 0
+    },
+    "Speed": {
+      "address": 5,
+      "default": 0
+    },
+    "Tilt": {
+      "addresscoarse": 3,
+      "addressfine": 4,
+      "default": 128
+    },
+    "White": {
+      "address": 10,
+      "default": 0
+    }
+  },
+  "modulation": {
+    "auto": {
+      "attribute": "Auto Modes",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "colormacro": {
+      "attribute": "Color Macro",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "pan": {
+      "attribute": "Pan",
+      "fallback": "last",
+      "mergeMode": "weightedaverage"
+    },
+    "tilt": {
+      "attribute": "Tilt",
+      "fallback": "last",
+      "mergeMode": "weightedaverage"
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {
+    "dim": {
+      "attribute": "Dim",
+      "rgb": "max"
+    },
+    "red": {
+      "attribute": "Red",
+      "rgbw": "red"
+    },
+    "green": {
+      "attribute": "Green",
+      "rgbw": "green"
+    },
+    "blue": {
+      "attribute": "Blue",
+      "rgbw": "blue"
+    },
+    "white": {
+      "attribute": "White",
+      "rgbw": "luminance"
+    }
+  }
+}

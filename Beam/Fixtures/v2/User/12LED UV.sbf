@@ -1,0 +1,71 @@
+{
+  "modulation": {
+    "group1": {
+      "attribute": "Group 1",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "group2": {
+      "attribute": "Group 2",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "group3": {
+      "attribute": "Group 3",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "group4": {
+      "attribute": "Group 4",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "preset": {
+      "attribute": "Preset",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "speed": {
+      "attribute": "Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Dim": {
+      "address": 1,
+      "default": 0
+    },
+    "Group 1": {
+      "address": 2,
+      "default": 255
+    },
+    "Group 2": {
+      "address": 3,
+      "default": 255
+    },
+    "Group 3": {
+      "address": 4,
+      "default": 255
+    },
+    "Group 4": {
+      "address": 5,
+      "default": 255
+    },
+    "Preset": {
+      "address": 6,
+      "default": 0
+    },
+    "Speed": {
+      "address": 7,
+      "default": 0
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {
+    "dim": {
+       "attribute": "Dim",
+       "rgb": "max"
+    }
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "modulation": {
+    "automode": {
+      "attribute": "Auto Mode",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "autospeed": {
+      "attribute": "Auto Speed",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash1": {
+      "attribute": "Wash 1",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash2": {
+      "attribute": "Wash 2",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash3": {
+      "attribute": "Wash 3",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash4": {
+      "attribute": "Wash 4",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash5": {
+      "attribute": "Wash 5",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash6": {
+      "attribute": "Wash 6",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash7": {
+      "attribute": "Wash 7",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "wash8": {
+      "attribute": "Wash 8",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "washstrobespeed": {
+      "attribute": "Wash Strobe Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "derbymode": {
+      "attribute": "Derby Mode",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "derbystrobespeed": {
+      "attribute": "Derby Strobe Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "derbyspeed": {
+      "attribute": "Derby Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "smdmode": {
+      "attribute": "SMD Mode",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "lasermode": {
+      "attribute": "Laser Mode",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "laserstrobespeed": {
+      "attribute": "Laser Strobe Speed",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "lasermovespeed": {
+      "attribute": "Laser Move Speed",
+      "mergeMode": "addition",
+      "fallback": "last"
+    }
+  },
+  "attributes": {
+    "Auto Mode": {
+      "address": 1,
+      "slots": {
+        "Blackout": 0,
+        "Spots": 16,
+        "Lasers": 31,
+        "Derby": 46,
+        "Strobes": 61,
+        "Spot/Laser/Derby": 76,
+        "Spot/Laser/Strobe": 91,
+        "Spot/Derby/Strobe": 106,
+        "Laser/Derby/Strobe": 131,
+        "Spot/Laser": 136,
+        "Spot/Derby": 151,
+        "Spot/Strobe": 166,
+        "Laser/Derby": 181,
+        "Laser/Strobe": 196,
+        "Derby/Strobe": 211,
+        "All": 226
+        },
+      "default": 0
+    },
+    "Auto Speed": {
+      "address": 2,
+      "default": 0
+    },
+    "Wash 1": {
+      "address": 3,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 2": {
+      "address": 4,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 3": {
+      "address": 5,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 4": {
+      "address": 6,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 5": {
+      "address": 7,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 6": {
+      "address": 8,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 7": {
+      "address": 9,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash 8": {
+      "address": 10,
+      "slots": {
+        "Blackout": 0,
+        "Red": 52,
+        "Green": 103,
+        "Blue": 154,
+        "UV": 205
+      },
+      "default": 0
+    },
+    "Wash Strobe Speed": {
+      "address": 11,
+      "default": 0
+    },
+    "Derby Mode": {
+      "address": 12,
+      "slots": {
+        "Blackout": 0,
+        "Red": 10,
+        "Green": 15,
+        "Blue": 20,
+        "Amber": 25,
+        "White": 30,
+        "White/Red": 35,
+        "Red/Green": 40,
+        "Green/Blue": 45,
+        "Blue/Amber": 50,
+        "Amber/White": 55,
+        "White/Green": 60,
+        "Green/Amber": 65,
+        "Amber/Red": 70,
+        "Red/Blue": 75,
+        "Blue/White": 80,
+        "Red/Green/Blue": 85,
+        "Red/Green/Amber": 90,
+        "Red/Green/White": 95,
+        "Red/Amber/Blue": 100,
+        "Red/White/Blue": 105,
+        "Red/Amber/White": 110,
+        "Amber/Green/Blue": 115,
+        "Blue/Green/White": 120,
+        "Amber/Green/White": 125,
+        "Amber/White/Blue": 130,
+        "Red/Green/Blue/Amber": 135,
+        "Red/Green/Blue/White": 140,
+        "Green/Blue/Amber/White": 145,
+        "Red/Green/Amber/White": 150,
+        "Red/Blue/Amber/White": 155,
+        "Red/Green/Blue/Amber/White": 160,
+        "Auto 1": 165,
+        "Auto 2": 210,
+        "Auto Sound": 223
+      },
+      "default": 0
+    },
+    "Derby Strobe Speed": {
+      "address": 13,
+      "slots": {
+        "Speed": 5,
+        "Sound": 201
+      },
+      "default": 0
+    },
+    "Derby Speed": {
+      "address": 14,
+      "slots": {
+        "Stop": 0,
+        "Forward": 5,
+        "Stop": 128,
+        "Reverse": 134
+      },
+      "default": 0
+    },
+    "SMD Mode": {
+      "address": 15,
+      "slots": {
+        "Blackout": 0,
+        "Pgm 1": 10,
+        "Pgm 2": 20,
+        "Pgm 3": 30,
+        "Pgm 4": 40,
+        "Pgm 5": 50,
+        "Pgm 6": 60,
+        "Pgm 7": 70,
+        "Pgm 8": 80,
+        "Pgm 9": 90,
+        "Pgm 10": 100,
+        "Pgm 11": 110,
+        "Full": 120,
+        "Sound": 201
+      },
+      "default": 0
+    },
+    "Laser Mode": {
+      "address": 16,
+      "slots": {
+        "Blackout": 0,
+        "Red": 10,
+        "Green": 50,
+        "Green/Red Alternating": 90,
+        "Red on, Green Strobe": 130,
+        "Green on, Red Strobe": 170,
+        "Red+Green Strobe": 210
+      },
+      "default": 0
+    },
+    "Laser Strobe Speed": {
+      "address": 17,
+      "slots": {
+        "Speed": 5,
+        "Sound": 255
+      },
+      "default": 0
+    },
+    "Laser Move Speed": {
+      "address": 18,
+      "slots": {
+        "Stop": 0,
+        "Clockwise": 5,
+        "Stop": 128,
+        "Anticlockwise": 134
+      },
+      "default": 0
+    }
+  }
+}

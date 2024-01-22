@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "modulation": {
+    "pan": {
+      "attribute": "Pan",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tilt": {
+      "attribute": "Tilt",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "pantiltspeed": {
+      "attribute": "Pan/Tilt Speed",
+      "mergeMode": "weightedaverage",
+      "fallback": "none"
+    },
+    "dim": {
+      "multiplyBy": "volume",
+      "attribute": "Dimmer / Strobe",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "red": {
+      "attribute": "Red",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "green": {
+      "attribute": "Green",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "blue": {
+      "attribute": "Blue",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "colormacro": {
+      "attribute": "Color Macro",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "colormacrospeed": {
+      "attribute": "Color Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "movemacro": {
+      "attribute": "Movement Macro",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "gobo": {
+      "attribute": "Gobo",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Pan": {
+      "addresscoarse": 1,
+      "addressfine": 2,
+      "default": 128
+    },
+    "Tilt": {
+      "addresscoarse": 3,
+      "addressfine": 4,
+      "default": 128
+    },
+    "Pan/Tilt Speed": {
+      "address": 5,
+      "default": 0
+    },
+    "Dimmer / Strobe": {
+      "address": 6,
+      "default": 255
+    },
+    "Red": {
+      "address": 7
+    },
+    "Green": {
+      "address": 8
+    },
+    "Blue": {
+      "address": 9
+    },
+    "Color Macros": {
+      "address": 10
+    },
+    "Color Speed": {
+      "address": 11
+    },
+    "Movement Macros": {
+      "address": 12
+    },
+    "Gobo": {
+      "address": 13
+    }
+  }
+}

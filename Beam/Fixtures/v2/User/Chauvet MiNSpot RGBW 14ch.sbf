@@ -1,0 +1,136 @@
+{
+  "modulation": {
+    "pan": {
+      "attribute": "Pan",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tilt": {
+      "attribute": "Tilt",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "pantiltspeed": {
+      "attribute": "Pan/Tilt Speed",
+      "mergeMode": "weightedaverage",
+      "fallback": "none"
+    },
+    "dim": {
+      "attribute": "Dimmer / Strobe",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "red": {
+      "attribute": "Red",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "green": {
+      "attribute": "Green",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "blue": {
+      "attribute": "Blue",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "white": {
+      "attribute": "White",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "colormacro": {
+      "attribute": "Color Macro",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "colormacrospeed": {
+      "attribute": "Color Speed",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "automode": {
+      "attribute": "Auto Program",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "gobo": {
+      "attribute": "Gobo",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Pan": {
+      "addresscoarse": 1,
+      "addressfine": 2,
+      "default": 128
+    },
+    "Tilt": {
+      "addresscoarse": 3,
+      "addressfine": 4,
+      "default": 128
+    },
+    "Pan/Tilt Speed": {
+      "address": 5,
+      "default": 0
+    },
+    "Dimmer / Strobe": {
+      "address": 6,
+      "slots": {
+        "closed": 0,
+        "dim": 8,
+        "strobe": 135,
+        "open": 240
+      },
+      "default": 255
+    },
+    "Red": {
+      "address": 7
+    },
+    "Green": {
+      "address": 8
+    },
+    "Blue": {
+      "address": 9
+    },
+    "White": {
+      "address": 10
+    },
+    "Color Macro": {
+      "address": 11,
+      "slots": {
+        "nofunction": 0,
+        "white": 8,
+        "red": 22,
+        "green": 36,
+        "blue": 50,
+        "cyan": 64,
+        "magenta": 78,
+        "yellow": 92,
+        "purple": 106,
+        "orange": 120,
+        "chartreuse": 134,
+        "pink": 148,
+        "brown": 162,
+        "gold": 176,
+        "crimson": 190,
+        "violet": 204,
+        "grape": 218,
+        "auto": 232
+       }
+    },
+    "Color Speed": {
+      "address": 12
+    },
+    "Auto Program": {
+      "address": 13
+    },
+    "Gobo": {
+      "address": 14
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}

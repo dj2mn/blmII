@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "modulation": {
+    "select": {
+      "attribute": "Object Select",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "rotation": {
+      "attribute": "Rotation Speed",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "effectselect": {
+      "attribute": "FX Select",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "effectdepth": {
+      "attribute": "FX Depth",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "red": {
+      "attribute": "Ch1 Red",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "green": {
+      "attribute": "Ch1 Green",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "blue": {
+      "attribute": "Ch1 Blue",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "ch2red": {
+      "attribute": "Ch2 Red",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "ch2green": {
+      "attribute": "Ch2 Green",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "ch2blue": {
+      "attribute": "Ch2 Blue",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "renderctrl": {
+      "attribute": "Render Control",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "pan": {
+      "attribute": "Pan",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tilt": {
+      "attribute": "Tilt",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "size": {
+      "attribute": "Size",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tiling": {
+      "attribute": "Tile Spacing",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tilex": {
+      "attribute": "Tile X",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tiley": {
+      "attribute": "Tile Y",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "tilez": {
+      "attribute": "Tile Z",
+      "mergeMode": "addition",
+      "fallback": "last"
+    }
+  },
+  "attributes": {
+    "Object Select": {
+      "address": 1,
+      "default": 0
+    },
+    "Rotation Speed": {
+      "address": 2,
+      "default": 0
+    },
+    "FX Select": {
+      "address": 3,
+      "default": 0
+    },
+    "FX Depth": {
+      "address": 4,
+      "default": 0
+    },
+    "Ch1 Red": {
+      "address": 5,
+      "default": 255
+    },
+    "Ch1 Green": {
+      "address": 6,
+      "default": 255
+    },
+    "Ch1 Blue": {
+      "address": 7,
+      "default": 255
+    },
+    "Ch2 Red": {
+      "address": 8,
+      "default": 255
+    },
+    "Ch2 Green": {
+      "address": 9,
+      "default": 255
+    },
+    "Ch2 Blue": {
+      "address": 10,
+      "default": 255
+    },
+    "Render Control": {
+      "address": 11,
+      "default": 128
+    },
+    "Pan": {
+      "address": 12,
+      "default": 128
+    },
+    "Tilt": {
+      "address": 13,
+      "default": 128
+    },
+    "Size": {
+      "address": 14,
+      "default": 0
+    },
+    "Tile Spacing": {
+      "address": 15,
+      "default": 0
+    },
+    "Tile X": {
+      "address": 16,
+      "default": 0
+    },
+    "Tile Y": {
+      "address": 17,
+      "default": 0
+    },
+    "Tile Z": {
+      "address": 18,
+      "default": 0
+    }
+  }
+}

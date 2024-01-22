@@ -1,0 +1,151 @@
+{
+  "modulation": {
+    "mode": {
+      "attribute": "Mode",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "pattern": {
+      "attribute": "Patterns",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "zoom": {
+      "attribute": "Zoom",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "yrotation": {
+      "attribute": "Y Rotation",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "xrotation": {
+      "attribute": "X Rotation",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "zrotation": {
+      "attribute": "Z Rotation",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "pan": {
+      "attribute": "X Position",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "tilt": {
+      "attribute": "Y Position",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Mode": {
+      "address": 1,
+      "slots": {
+        "Blackout": 0,
+        "Auto": 64,
+        "Sound Activated": 128,
+        "DMX Mode": 192
+      },
+      "default": 0
+    },
+    "Patterns": {
+      "address": 2,
+      "default": 0,
+      "slots": {
+        "Open": 0,
+        "Circle 2": 8,
+        "Triangle": 16,
+        "Square": 24,
+        "Dashed Square": 32,
+        "Double Square": 40,
+        "Cross": 48,
+        "Pattern #8": 56,
+        "Pattern #9": 64,
+        "Pattern #10": 72,
+        "Spiral": 80,
+        "Pattern #12": 88,
+        "Pattern #13": 96,
+        "Pattern #14": 104,
+        "Pattern #15": 112,
+        "Pattern #16": 120,
+        "V": 128,
+        "M": 136,
+        "Pattern #19": 144,
+        "Line": 152,
+        "Line 2": 160,
+        "Line 3": 168,
+        "2 Lines": 176,
+        "+": 184,
+        "Pattern #25": 192,
+        "Pattern #26": 200,
+        "Pattern #27": 208,
+        "Four Squares": 216,
+        "Pattern #29": 224,
+        "Pattern #30": 232,
+        "Pattern #31": 240,
+        "Rays": 248
+      }
+    },
+    "Zoom": {
+      "address": 3,
+      "slots": {
+        "Fixed Zoom": 0,
+        "Zooming In": 128,
+        "Zooming Out": 170,
+        "Zooming In & Out": 210
+      },
+      "default": 0
+    },
+    "Y Rotation": {
+      "address": 4,
+      "slots": {
+        "Fixed Position": 0,
+        "Clockwise Rotation": 128,
+        "Anticlockwise Rotation": 192
+      },
+      "default": 0
+    },
+    "X Rotation": {
+      "address": 5,
+      "slots": {
+        "Fixed Position": 0,
+        "Clockwise Rotation": 128,
+        "Anticlockwise Rotation": 192
+      },
+      "default": 0
+    },
+    "Z Rotation": {
+      "address": 6,
+      "slots": {
+        "Fixed Position": 0,
+        "Clockwise Rotation": 128,
+        "Anticlockwise Rotation": 192
+      },
+      "default": 0
+    },
+    "X Position": {
+      "address": 7,
+      "slots": {
+        "Fixed Position": 0,
+        "Clockwise Moving": 128,
+        "Anticlockwise Moving": 192
+      },
+      "default": 0
+    },
+    "Y Position": {
+      "address": 8,
+      "slots": {
+        "Fixed Position": 0,
+        "Clockwise Moving": 128,
+        "Anticlockwise Moving": 192
+      },
+      "default": 0
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}
