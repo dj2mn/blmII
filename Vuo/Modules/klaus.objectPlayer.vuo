@@ -4,7 +4,7 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.2
- * @lastSavedInVuoVersion 2.4.2
+ * @lastSavedInVuoVersion 2.4.3
  * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
@@ -104,14 +104,14 @@ ShareList [type="vuo.data.share.list.VuoInteger" version="1.0.0" label="Share DM
 ShareValue [type="vuo.data.share.VuoReal" version="1.0.0" label="Share Time|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-255,240"];
 ShowBackOf3DObject [type="vuo.scene.back" version="1.0.0" label="Show Back of 3D Object|<refresh>refresh\l|<object>object\l|<keepFront>keepFront\l|<backObject>backObject\r" pos="900,765" _keepFront="true"];
 SmoothWithDuration [type="vuo.motion.smooth.duration.VuoPoint2d" version="1.1.0" label="Smooth with Duration|<refresh>refresh\l|<time>time\l|<setPosition>setPosition\l|<setTarget>setTarget\l|<duration>duration\l|<curve>curve\l|<easing>easing\l|<position>position\r|<reachedTarget>reachedTarget\r" pos="1875,1275" _setPosition="\{\"x\":0.,\"y\":0.\}" _duration="0.50000000000000011" _curve="\"linear\"" _easing="\"in+out\""];
-SmoothWithInertia [type="vuo.motion.smooth.inertia.VuoReal" version="1.1.0" label="Smooth with Inertia|<refresh>refresh\l|<time>time\l|<setPosition>setPosition\l|<setTarget>setTarget\l|<duration>duration\l|<position>position\r|<reachedTarget>reachedTarget\r" pos="555,825" _setPosition="0." _duration="1.0"];
+SmoothWithInertia [type="vuo.motion.smooth.inertia.VuoReal" version="1.1.0" label="Smooth with Inertia|<refresh>refresh\l|<time>time\l|<setPosition>setPosition\l|<setTarget>setTarget\l|<duration>duration\l|<position>position\r|<reachedTarget>reachedTarget\r" pos="555,825" _setPosition="0." _duration="0.5"];
 Tile3DObject [type="vuo.scene.tile" version="1.0.0" label="Tile 3D Object|<refresh>refresh\l|<object>object\l|<center>center\l|<spacing>spacing\l|<fieldSize>fieldSize\l|<tiledObject>tiledObject\r" pos="1785,750" _center="\{\"x\":0.0,\"y\":0.0,\"z\":0.0\}"];
 Transform3DObject [type="vuo.scene.transform" version="1.0.0" label="Transform 3D Object|<refresh>refresh\l|<object>object\l|<transform>transform\l|<transformedObject>transformedObject\r" pos="900,855"];
 TranslateImage [type="vuo.image.translate" version="1.0.0" label="Translate Image|<refresh>refresh\l|<image>image\l|<translation>translation\l|<horizontalExterior>horizontalExterior\l|<verticalExterior>verticalExterior\l|<translatedImage>translatedImage\r" pos="2100,1170" _horizontalExterior="2" _verticalExterior="2"];
 VideoFXSwitcher2 [type="klaus.videoFXSwitcher" version="" label="VideoFXSwitcher|<refresh>refresh\l|<Image>Image\l|<SelectEffect>SelectEffect\l|<EffectDepth>EffectDepth\l|<Color1>Color1\l|<Color2>Color2\l|<Out>Out\r" pos="2415,735"];
 Wave [type="vuo.motion.wave" version="2.0.0" label="Wave|<refresh>refresh\l|<time>time\l|<wave>wave\l|<period>period\l|<center>center\l|<amplitude>amplitude\l|<phase>phase\l|<value>value\r" pos="750,1335" _wave="\"sawtooth\"" _center="0.0" _amplitude="360" _phase="0.0"];
 PublishedInputs [type="vuo.in" label="PublishedInputs|<DMXIn>DMXIn\r|<DMXChannel>DMXChannel\r|<Time>Time\r|<Width>Width\r|<Height>Height\r|<DataPath>DataPath\r|<Image>Image\r" _DMXIn_type="VuoList_VuoInteger" _DMXChannel_type="VuoInteger" _Time_type="VuoReal" _Time="0.0" _Width_type="VuoInteger" _Width_suggestedMin="1" _Width_suggestedMax="4096" _Width_suggestedStep="256" _Width="1024" _Height_type="VuoInteger" _Height_suggestedMin="1" _Height_suggestedMax="4096" _Height_suggestedStep="256" _Height="768" _DataPath_type="VuoText" _Image_type="VuoImage"];
-PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Out>Out\l|<IsRunning>IsRunning\l" _Out_type="VuoImage" _IsRunning_type="VuoBoolean"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Out>Out\l|<IsRunning>IsRunning\l|<Color1>Color1\l|<Color2>Color2\l" _Out_type="VuoImage" _IsRunning_type="VuoBoolean" _Color1_type="VuoColor" _Color2_type="VuoColor"];
 
 Comment [type="vuo.comment" label="\"Load Object Data\"" pos="-270,1035" width="510" height="599" fillcolor="yellow"];
 Comment10 [type="vuo.comment" label="\"Set Size\"" pos="270,780" width="490" height="231" fillcolor="lime"];
@@ -215,11 +215,13 @@ MakeLitImageShader:shader -> SelectInput2:option4;
 MakeOrthographicCamera:object -> MakeList27:1;
 MakeRGBColor2:color -> MakeLitColorShader:highlightColor [style=invis];
 MakeRGBColor2:color -> MakeWireframeShader:backColor [style=invis];
+MakeRGBColor2:color -> PublishedOutputs:Color2;
 MakeRGBColor2:color -> VideoFXSwitcher2:Color1 [style=invis];
 MakeRGBColor:color -> MakeEdgeShader:color;
 MakeRGBColor:color -> MakeLitColorShader:color;
 MakeRGBColor:color -> MakeLitImageShader:highlightColor;
 MakeRGBColor:color -> MakeWireframeShader:frontColor;
+MakeRGBColor:color -> PublishedOutputs:Color1;
 MakeRGBColor:color -> VideoFXSwitcher2:Color2 [style=invis];
 MakeWireframeShader:shader -> SelectInput2:option1;
 PublishedInputs:DMXChannel -> DMXBuffer8:DMXChannel;
