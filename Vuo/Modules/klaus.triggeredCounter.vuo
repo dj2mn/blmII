@@ -1,0 +1,67 @@
+/**
+ * @file
+ * @brief TriggeredCounter
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.3
+ * @copyright Copyright © 2024 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+AreEqual [type="vuo.data.areEqual.VuoReal" version="1.0.0" label="Are Equal|<refresh>refresh\l|<values>values\l|<equal>equal\r" pos="1170,90"];
+AreEqual2 [type="vuo.data.areEqual.VuoReal" version="1.0.0" label="Are Equal|<refresh>refresh\l|<values>values\l|<equal>equal\r" pos="1170,165"];
+Became02 [type="vuo.event.becameTrue" version="1.0.0" label="Became 1|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="1320,165"];
+BecameTrue [type="vuo.event.becameTrue" version="1.0.0" label="Became 0|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="1320,90"];
+Calculate [type="vuo.math.calculate" version="1.0.0" label="Calculate|<refresh>refresh\l|<expression>expression\l|<values>values\l|<result>result\r" pos="0,75" _expression="\{\"expressions\":[\"1 \\/ ( A * 50 )\"],\"inputVariables\":[\"A\"],\"outputVariables\":[\"result\"]\}"];
+CountWithinRange [type="vuo.math.countWithinRange.VuoReal" version="1.0.2" label="Count within Range|<refresh>refresh\l|<increment>increment\l|<decrement>decrement\l|<setCount>setCount\l|<minimum>minimum\l|<maximum>maximum\l|<wrapMode>wrapMode\l|<count>count\r" pos="975,-120" _minimum="0.0" _maximum="1.0" _wrapMode="\"saturate\""];
+FirePeriodically [type="vuo.time.firePeriodically2" version="2.0.0" label="TimerClock|<refresh>refresh\l|<seconds>seconds\l|<fired>fired\r" pos="165,-165" _seconds="0.02" _fired_eventThrottling="drop"];
+GetItemFromList [type="vuo.list.get.VuoReal" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="525,135" _which="1"];
+GetItemFromList2 [type="vuo.list.get.VuoReal" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="525,225" _which="2"];
+MakeDictionary [type="vuo.dictionary.make.VuoText.VuoReal" version="1.0.0" label="Make Dictionary|<refresh>refresh\l|<keys>keys\l|<values>values\l|<dictionary>dictionary\r" pos="-240,450"];
+MakeList [type="vuo.list.make.1.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-240,450" _1="\"A\""];
+MakeList2 [type="vuo.list.make.1.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-33,101"];
+MakeList3 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1137,101"];
+MakeList5 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="1137,176" _2="1.0"];
+MakeList7 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="282,221" _1="0.0" _2="1.0"];
+MakeList8 [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="243,206" _1="1.0" _2="0.0"];
+SelectEventOutput [type="vuo.select.out.boolean.event" version="2.0.0" label="Select Event Output|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="630,-135"];
+SelectInput3 [type="vuo.select.in.boolean.VuoReal" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="345,30" _falseOption="1.0" _trueOption="0.0"];
+SelectInputList2 [type="vuo.select.in.list.boolean.VuoReal" version="2.0.0" label="Select Input List|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="315,180"];
+ShareEvent [type="vuo.event.share" version="1.0.0" label="Share Event|<refresh>refresh\l|<event>event\l|<sameEvent>sameEvent\r" pos="375,-150"];
+Toggle [type="vuo.logic.toggle" version="1.0.0" label="Toggle|<refresh>refresh\l|<toggle>toggle\l|<value>value\r" pos="120,-30" _toggle_manuallyFirable="yes"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Time>Time\r|<Trigger>Trigger\r" _Time_type="VuoReal" _Time="10.0" _Trigger_type="event"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Value>Value\l|<Finished>Finished\l" _Value_type="VuoReal" _Finished_type="event"];
+
+AreEqual2:equal -> Became02:value;
+AreEqual:equal -> BecameTrue:value;
+Became02:becameTrue -> PublishedOutputs:Finished;
+BecameTrue:becameTrue -> PublishedOutputs:Finished;
+Calculate:result -> CountWithinRange:decrement;
+Calculate:result -> CountWithinRange:increment;
+CountWithinRange:count -> MakeList3:1;
+CountWithinRange:count -> MakeList5:1;
+CountWithinRange:count -> PublishedOutputs:Value;
+FirePeriodically:fired -> ShareEvent:event;
+MakeDictionary:dictionary -> Calculate:values;
+MakeList2:list -> MakeDictionary:values;
+MakeList3:list -> AreEqual:values;
+MakeList5:list -> AreEqual2:values;
+MakeList7:list -> SelectInputList2:trueOption;
+MakeList8:list -> SelectInputList2:falseOption;
+MakeList:list -> MakeDictionary:keys;
+PublishedInputs:Time -> MakeList2:1;
+PublishedInputs:Trigger -> Calculate:expression;
+PublishedInputs:Trigger -> Toggle:toggle;
+SelectEventOutput:falseOption -> CountWithinRange:decrement;
+SelectEventOutput:trueOption -> CountWithinRange:increment;
+SelectInput3:out -> CountWithinRange:setCount;
+SelectInputList2:out -> GetItemFromList2:list;
+SelectInputList2:out -> GetItemFromList:list;
+ShareEvent:sameEvent -> SelectEventOutput:in;
+Toggle:value -> SelectEventOutput:which;
+Toggle:value -> SelectInput3:which;
+Toggle:value -> SelectInputList2:which;
+}
