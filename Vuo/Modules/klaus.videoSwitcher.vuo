@@ -1,0 +1,60 @@
+/**
+ * @file
+ * @brief Video Switcher
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.4
+ * @lastSavedInVuoVersion 2.4.4
+ * @copyright Copyright © 2024 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+BlendImages [type="vuo.image.blend" version="1.2.3" label="Blend Images|<refresh>refresh\l|<background>background\l|<foreground>foreground\l|<blendMode>blendMode\l|<foregroundOpacity>foregroundOpacity\l|<replaceOpacity>replaceOpacity\l|<blended>blended\r" pos="705,30" _blendMode="\"normal\"" _replaceOpacity="false"];
+Changed3 [type="vuo.event.changed2.VuoText" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="-405,150"];
+ConvertFrameToImage2 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="945,510"];
+ConvertFrameToImage4 [type="vuo.type.videoframe.image" version="1.0.0" label="Convert Frame to Image|<refresh>refresh\l|<frame>frame\l|<image>image\r" pos="945,495"];
+GetItemFromList3 [type="vuo.list.get.VuoText" version="1.0.1" label="Select Clip to Play|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="-420,0" _which_manuallyFirable="yes"];
+MovieDataDir2 [type="vuo.file.list" version="1.0.2" label="Movie Data Dir|<refresh>refresh\l|<folder>folder\l|<includeSubfolders>includeSubfolders\l|<fileType>fileType\l|<files>files\r" pos="-720,-165" _includeSubfolders="true" _fileType="\"movie\""];
+PlayMovie [type="vuo.video.play" version="2.1.0" label="Background Movie|<refresh>refresh\l|<play>play\l|<pause>pause\l|<setTime>setTime\l|<url>url\l|<loop>loop\l|<playbackRate>playbackRate\l|<optimization>optimization\l|<decodedVideo>decodedVideo\r|<decodedAudio>decodedAudio\r|<finishedPlayback>finishedPlayback\r" pos="300,-90" _setTime="\"\"" _loop="\"loop\"" _playbackRate="1" _optimization="\"auto\"" _decodedVideo_eventThrottling="drop" _decodedAudio_eventThrottling="enqueue" _finishedPlayback_eventThrottling="enqueue"];
+PlayMovie2 [type="vuo.video.play" version="2.1.0" label="Foreground Movie|<refresh>refresh\l|<play>play\l|<pause>pause\l|<setTime>setTime\l|<url>url\l|<loop>loop\l|<playbackRate>playbackRate\l|<optimization>optimization\l|<decodedVideo>decodedVideo\r|<decodedAudio>decodedAudio\r|<finishedPlayback>finishedPlayback\r" pos="300,165" _setTime="\"\"" _loop="\"loop\"" _playbackRate="1" _optimization="\"auto\"" _decodedVideo_eventThrottling="drop" _decodedAudio_eventThrottling="enqueue" _finishedPlayback_eventThrottling="enqueue"];
+SelectEventOutput2 [type="vuo.select.out.boolean.event" version="2.0.0" label="Play when triggered|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="-75,-105"];
+SelectOutput [type="vuo.select.out.boolean.VuoText" version="2.0.0" label="Alternate Players|<refresh>refresh\l|<which>which\l|<in>in\l|<falseOption>falseOption\r|<trueOption>trueOption\r" pos="-75,60"];
+ShareEvent [type="vuo.event.share" version="1.0.0" label="Share Event|<refresh>refresh\l|<event>event\l|<sameEvent>sameEvent\r" pos="-360,180"];
+ShareValue [type="vuo.data.share.VuoReal" version="1.0.0" label="Fade Rate Seconds|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-645,-375"];
+Toggle [type="vuo.logic.toggle" version="1.0.0" label="Toggle|<refresh>refresh\l|<toggle>toggle\l|<value>value\r" pos="-315,-90"];
+Toggle3 [type="vuo.logic.toggle" version="1.0.0" label="Toggle|<refresh>refresh\l|<toggle>toggle\l|<value>value\r" pos="-375,165"];
+TriggeredCounter [type="klaus.triggeredCounter" version="" label="TriggeredCounter|<refresh>refresh\l|<Time>Time\l|<Duration>Duration\l|<Trigger>Trigger\l|<Value>Value\r|<Finished>Finished\r|<Finished0>Finished0\r|<Finished1>Finished1\r|<Event>Event\r" pos="240,-375" _Time="10.0"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<URL>URL\r|<ClipSelect>ClipSelect\r|<FadeRate>FadeRate\r" _URL_type="VuoText" _URL="\"\\/Users\\/stewart\\/Dropbox\\/VUO\\/ArtNetMoviePlayer\\/data\\/video\\/\"" _ClipSelect_type="VuoInteger" _ClipSelect_suggestedMin="1" _ClipSelect="56" _FadeRate_type="VuoReal" _FadeRate="2.5"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Video>Video\l" _Video_type="VuoImage"];
+
+Comment3 [type="vuo.comment" label="\"Movie selection and trigger logic\"" pos="-480,-240" width="639" height="563"];
+
+BlendImages:blended -> PublishedOutputs:Video;
+Changed3:changed -> Toggle3:toggle;
+ConvertFrameToImage2:image -> BlendImages:foreground;
+ConvertFrameToImage4:image -> BlendImages:background;
+GetItemFromList3:item -> Changed3:value;
+GetItemFromList3:item -> SelectOutput:in;
+MovieDataDir2:files -> GetItemFromList3:list;
+PlayMovie2:decodedVideo -> ConvertFrameToImage2:frame;
+PlayMovie:decodedVideo -> ConvertFrameToImage4:frame;
+PublishedInputs:ClipSelect -> GetItemFromList3:which;
+PublishedInputs:FadeRate -> ShareValue:value;
+PublishedInputs:URL -> MovieDataDir2:folder;
+SelectEventOutput2:falseOption -> PlayMovie:play;
+SelectEventOutput2:trueOption -> PlayMovie2:play;
+SelectOutput:falseOption -> PlayMovie2:url;
+SelectOutput:trueOption -> PlayMovie:url;
+ShareEvent:sameEvent -> SelectEventOutput2:in;
+ShareEvent:sameEvent -> Toggle:toggle;
+ShareEvent:sameEvent -> TriggeredCounter:Trigger;
+ShareValue:sameValue -> TriggeredCounter:Duration;
+Toggle3:value -> ShareEvent:event;
+Toggle:value -> SelectEventOutput2:which;
+Toggle:value -> SelectOutput:which;
+TriggeredCounter:Finished0 -> PlayMovie2:pause;
+TriggeredCounter:Finished1 -> PlayMovie:pause;
+TriggeredCounter:Value -> BlendImages:foregroundOpacity;
+}
