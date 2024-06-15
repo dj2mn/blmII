@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "modulation": {
+    "bankselect": {
+      "attribute": "Bank Select",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "select": {
+      "attribute": "Clip Select",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "speed": {
+      "attribute": "Speed / Direction",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "fadetime": {
+      "attribute": "Fade Time",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "effectselect": {
+      "attribute": "Effect Select",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "effectdepth": {
+      "attribute": "Effect Depth",
+      "mergeMode": "addition",
+      "fallback": "last"
+    },
+    "red": {
+      "attribute": "Red",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "green": {
+      "attribute": "Green",
+      "mergeMode": "addition",
+      "fallback": "none"
+    },
+    "blue": {
+      "attribute": "Blue",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Bank Select": {
+      "address": 1,
+      "default": 0
+    },
+    "Clip Select": {
+      "address": 2,
+      "default": 0
+    },
+    "Speed / Direction": {
+      "address": 3,
+      "default": 0
+    },
+    "Fade Time": {
+      "address": 4,
+      "default": 0
+    },
+    "Effect Select": {
+      "address": 5,
+      "default": 0
+    },
+    "Effect Depth": {
+      "address": 6,
+      "default": 0
+    },
+    "Red": {
+      "address": 7,
+      "default": 0
+    },
+    "Green": {
+      "address": 8,
+      "default": 0
+    },
+    "Blue": {
+      "address": 9,
+      "default": 0
+    }
+  }
+}

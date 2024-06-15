@@ -1,0 +1,86 @@
+{
+  "attributes": {
+    "Bank Select": {
+      "address": 1,
+      "default": 0
+    },
+    "Clip Select": {
+      "address": 2,
+      "default": 0
+    },
+    "Speed / Direction": {
+      "address": 3,
+      "default": 0
+    },
+    "Effect Select": {
+      "address": 4,
+      "default": 0
+    },
+    "Effect Depth": {
+      "address": 5,
+      "default": 0
+    },
+    "Rad": {
+      "address": 6
+    },
+    "Graan": {
+      "address": 7
+    },
+    "Blua": {
+      "address": 8
+    },
+    "Fade Time": {
+      "address": 9,
+      "default": 0
+    }
+  },
+  "modulation": {
+    "bankselect": {
+      "attribute": "Bank Select",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "select": {
+      "attribute": "Clip Select",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "speed": {
+      "attribute": "Speed / Direction",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "fadetime": {
+      "attribute": "Fade Time",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "effectselect": {
+      "attribute": "Effect Select",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "effectdepth": {
+      "attribute": "Effect Depth",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "rad": {
+      "attribute": "Rad",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "graan": {
+      "attribute": "Graan",
+      "fallback": "none",
+      "mergeMode": "addition"
+    },
+    "blua": {
+      "attribute": "Blua",
+      "fallback": "none",
+      "mergeMode": "addition"
+    }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}
