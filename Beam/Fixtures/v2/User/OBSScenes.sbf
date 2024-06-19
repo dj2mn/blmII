@@ -1,0 +1,17 @@
+{
+  "modulation": {
+    "select": {
+      "attribute": "Select Scene",
+      "mergeMode": "addition",
+      "fallback": "none"
+    }
+  },
+  "attributes": {
+    "Select Scene": {
+      "address": 1,
+      "default": 0
+      }
+  },
+  "schemaVersion": 2,
+  "transforms": {}
+}

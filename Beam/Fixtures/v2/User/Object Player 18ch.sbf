@@ -53,7 +53,7 @@
     "renderctrl": {
       "attribute": "Render Control",
       "mergeMode": "addition",
-      "fallback": "last"
+      "fallback": "none"
     },
     "pan": {
       "attribute": "Pan",
@@ -133,16 +133,13 @@
       "default": 255
     },
     "Render Control": {
-      "address": 11,
-      "default": 128
+      "address": 11
     },
     "Pan": {
-      "address": 12,
-      "default": 128
+      "address": 12
     },
     "Tilt": {
-      "address": 13,
-      "default": 128
+      "address": 13
     },
     "Zoom": {
       "address": 14,
