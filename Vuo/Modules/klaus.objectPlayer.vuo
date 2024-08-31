@@ -4,7 +4,7 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.2
- * @lastSavedInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.4
  * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
@@ -92,7 +92,7 @@ Scale27 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale DMX value
 Scale28 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale Y Control|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1440,885" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="10.0" _limitToRange="false"];
 Scale29 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale Z Control|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1440,915" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="10.0" _limitToRange="false"];
 Scale4 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="450,435" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="1.0" _limitToRange="false"];
-Scale5 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="600,1365" _start="0.0" _end="63.0" _scaledStart="100.0" _scaledEnd="0.5" _limitToRange="true"];
+Scale5 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="540,1365" _start="0.0" _end="63.0" _scaledStart="200.0" _scaledEnd="1.0" _limitToRange="true"];
 Scale8 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale ObjectSize DMX Input|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="300,840" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="2.0" _limitToRange="false"];
 Scale9 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="435,420" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="1.0" _limitToRange="false"];
 SelectInput [type="vuo.select.in.boolean.VuoImage" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="2220,810"];
@@ -109,7 +109,7 @@ Tile3DObject [type="vuo.scene.tile" version="1.0.0" label="Tile 3D Object|<refre
 Transform3DObject [type="vuo.scene.transform" version="1.0.0" label="Transform 3D Object|<refresh>refresh\l|<object>object\l|<transform>transform\l|<transformedObject>transformedObject\r" pos="900,855"];
 TranslateImage [type="vuo.image.translate" version="1.0.0" label="Translate Image|<refresh>refresh\l|<image>image\l|<translation>translation\l|<horizontalExterior>horizontalExterior\l|<verticalExterior>verticalExterior\l|<translatedImage>translatedImage\r" pos="2100,1170" _horizontalExterior="2" _verticalExterior="2"];
 VideoFXSwitcher2 [type="klaus.videoFXSwitcher" version="" label="VideoFXSwitcher|<refresh>refresh\l|<Image>Image\l|<SelectEffect>SelectEffect\l|<EffectDepth>EffectDepth\l|<Color1>Color1\l|<Color2>Color2\l|<Out>Out\r" pos="2415,735"];
-Wave [type="vuo.motion.wave" version="2.0.0" label="Wave|<refresh>refresh\l|<time>time\l|<wave>wave\l|<period>period\l|<center>center\l|<amplitude>amplitude\l|<phase>phase\l|<value>value\r" pos="750,1335" _wave="\"sawtooth\"" _center="0.0" _amplitude="360" _phase="0.0"];
+Wave [type="vuo.motion.wave" version="2.0.0" label="Wave|<refresh>refresh\l|<time>time\l|<wave>wave\l|<period>period\l|<center>center\l|<amplitude>amplitude\l|<phase>phase\l|<value>value\r" pos="720,1335" _wave="\"sawtooth\"" _center="0.0" _amplitude="360" _phase="0.0"];
 PublishedInputs [type="vuo.in" label="PublishedInputs|<DMXIn>DMXIn\r|<DMXChannel>DMXChannel\r|<Time>Time\r|<Width>Width\r|<Height>Height\r|<DataPath>DataPath\r|<Image>Image\r" _DMXIn_type="VuoList_VuoInteger" _DMXChannel_type="VuoInteger" _Time_type="VuoReal" _Time="0.0" _Width_type="VuoInteger" _Width_suggestedMin="1" _Width_suggestedMax="4096" _Width_suggestedStep="256" _Width="1024" _Height_type="VuoInteger" _Height_suggestedMin="1" _Height_suggestedMax="4096" _Height_suggestedStep="256" _Height="768" _DataPath_type="VuoText" _Image_type="VuoImage"];
 PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Out>Out\l|<IsRunning>IsRunning\l|<Color1>Color1\l|<Color2>Color2\l" _Out_type="VuoImage" _IsRunning_type="VuoBoolean" _Color1_type="VuoColor" _Color2_type="VuoColor"];
 

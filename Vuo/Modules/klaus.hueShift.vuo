@@ -1,0 +1,33 @@
+/**
+ * @file
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.3
+ * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+Add [type="vuo.math.add.VuoReal" version="2.1.1" label="Add|<refresh>refresh\l|<values>values\l|<sum>sum\r" pos="300,0"];
+ConvertIntegerToRealNumber [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="360,120"];
+GetHSLColorValues [type="vuo.color.get.hsl" version="2.0.0" label="Get HSL Color Values|<refresh>refresh\l|<color>color\l|<hue>hue\r|<saturation>saturation\r|<lightness>lightness\r|<opacity>opacity\r" pos="75,150"];
+MakeHSLColor [type="vuo.color.make.hsl" version="2.0.0" label="Make HSL Color|<refresh>refresh\l|<hue>hue\l|<saturation>saturation\l|<lightness>lightness\l|<opacity>opacity\l|<color>color\r" pos="360,150"];
+MakeList [type="vuo.list.make.2.VuoReal" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="267,11"];
+Scale [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="90,-75" _start="0.0" _end="359.0" _scaledStart="0.0" _scaledEnd="1.0" _limitToRange="false"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Color>Color\r|<HueOffset>HueOffset\r" _Color_type="VuoColor" _HueOffset_type="VuoInteger"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Color2>Color2\l" _Color2_type="VuoColor"];
+
+Add:sum -> MakeHSLColor:hue;
+ConvertIntegerToRealNumber:real -> Scale:value;
+GetHSLColorValues:hue -> MakeList:2;
+GetHSLColorValues:lightness -> MakeHSLColor:lightness;
+GetHSLColorValues:opacity -> MakeHSLColor:opacity;
+GetHSLColorValues:saturation -> MakeHSLColor:saturation;
+MakeHSLColor:color -> PublishedOutputs:Color2;
+MakeList:list -> Add:values;
+PublishedInputs:Color -> GetHSLColorValues:color;
+PublishedInputs:HueOffset -> ConvertIntegerToRealNumber:integer;
+Scale:scaledValue -> MakeList:1;
+}

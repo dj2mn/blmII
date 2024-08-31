@@ -3,31 +3,31 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.3
- * @lastSavedInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.4
  * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
 
 digraph G
 {
-DMXBuffer83 [type="klaus.dMXBuffer8" version="" label="DMX Buffer(8)|<refresh>refresh\l|<DMXIn>DMXIn\l|<DMXChannel>DMXChannel\l|<Out1>Out1\r|<Out2>Out2\r|<Out3>Out3\r|<Out4>Out4\r|<Out5>Out5\r|<Out6>Out6\r|<Out7>Out7\r|<Out8>Out8\r|<NextChDMX>NextChDMX\r" pos="150,285" _DMXChannel="283" _DMXChannel_manuallyFirable="yes"];
-DMXtoMIDIcc [type="klaus.dMXtoMIDIcc" version="" label="DMXtoMIDIcc|<refresh>refresh\l|<DMXin>DMXin\l|<Channel>Channel\l|<CC>CC\l|<Device>Device\l" pos="375,120" _Channel="1" _CC="1" _Device="\{\"name\":\"IAC Driver Bus 1\"\}"];
-DMXtoMIDIcc2 [type="klaus.dMXtoMIDIcc" version="" label="DMXtoMIDIcc|<refresh>refresh\l|<DMXin>DMXin\l|<Channel>Channel\l|<CC>CC\l|<Device>Device\l" pos="450,210" _Channel="1" _CC="2" _Device="\{\"name\":\"IAC Driver Bus 1\"\}"];
-FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="30,45" _started_eventThrottling="enqueue"];
-MakeTextImage2 [type="vuo.image.make.text" version="1.1.0" label="Make Text Image|<refresh>refresh\l|<text>text\l|<font>font\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<image>image\r" pos="480,330" fillcolor="orange" _font="\{\"fontName\":\"Avenir-Heavy\",\"pointSize\":96,\"underline\":false,\"color\":\{\"r\":1,\"g\":1,\"b\":1,\"a\":1\},\"alignment\":\"left\",\"characterSpacing\":1,\"lineSpacing\":1\}" _wrapWidth="0"];
+DMXBuffer83 [type="klaus.dMXBuffer8" version="" label="DMX Buffer(8)|<refresh>refresh\l|<DMXIn>DMXIn\l|<DMXChannel>DMXChannel\l|<Out1>Out1\r|<Out2>Out2\r|<Out3>Out3\r|<Out4>Out4\r|<Out5>Out5\r|<Out6>Out6\r|<Out7>Out7\r|<Out8>Out8\r|<NextChDMX>NextChDMX\r" pos="150,285" _DMXChannel="290"];
+DMXtoMIDIcc [type="klaus.dMXtoMIDIcc" version="" label="DMXtoMIDIcc|<refresh>refresh\l|<DMXin>DMXin\l|<Channel>Channel\l|<CC>CC\l|<Range>Range\l|<Device>Device\l" pos="525,120" _Channel="1" _CC="1" _Range="16" _Device="\{\"name\":\"IAC Driver Bus 1\"\}"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-180,165" _started_eventThrottling="enqueue"];
+MakeTextImage2 [type="vuo.image.make.text" version="1.1.0" label="Make Text Image|<refresh>refresh\l|<text>text\l|<font>font\l|<rotation>rotation\l|<wrapWidth>wrapWidth\l|<image>image\r" pos="540,315" fillcolor="orange" _font="\{\"fontName\":\"Avenir-Heavy\",\"pointSize\":96,\"underline\":false,\"color\":\{\"r\":1,\"g\":1,\"b\":1,\"a\":1\},\"alignment\":\"left\",\"characterSpacing\":1,\"lineSpacing\":1\}" _wrapWidth="0"];
 ReceiveArtNetMessages [type="vuo.artnet.receive" version="1.0.1" label="Receive Art-Net Messages|<refresh>refresh\l|<device>device\l|<receivedDmx>receivedDmx\r" pos="120,480" fillcolor="magenta" _receivedDmx_eventThrottling="drop"];
-RenderImageToWindow [type="vuo.image.render.window2" version="4.0.0" label="Render Image to Window|<refresh>refresh\l|<image>image\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="660,330" fillcolor="blue" _updatedWindow_eventThrottling="enqueue"];
+RenderImageToWindow [type="vuo.image.render.window2" version="4.0.0" label="Render Image to Window|<refresh>refresh\l|<image>image\l|<setWindowDescription>setWindowDescription\l|<updatedWindow>updatedWindow\r" pos="705,270" fillcolor="blue" _updatedWindow_eventThrottling="enqueue"];
+Scale [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="375,405" _start="0" _end="255" _scaledStart="1" _scaledEnd="16" _limitToRange="false"];
 SpecifyArtNetInput [type="vuo.artnet.make.input" version="1.0.0" label="Specify Art-Net Input|<refresh>refresh\l|<net>net\l|<subNet>subNet\l|<universe>universe\l|<device>device\r" pos="-90,480" _net="0" _subNet="0" _universe="1"];
-SummarizeValue4 [type="vuo.data.summarize.VuoInteger" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="570,435"];
+SummarizeValue [type="vuo.data.summarize.VuoInteger" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="630,420"];
 
 DMXBuffer83:Out1 -> DMXtoMIDIcc:DMXin;
-DMXBuffer83:Out1 -> SummarizeValue4:value;
-DMXBuffer83:Out2 -> DMXtoMIDIcc2:DMXin;
+DMXBuffer83:Out1 -> Scale:value;
 FireOnStart:started -> DMXBuffer83:DMXChannel;
 FireOnStart:started -> DMXtoMIDIcc:DMXin;
 FireOnStart:started -> SpecifyArtNetInput:net;
 MakeTextImage2:image -> RenderImageToWindow:image;
 ReceiveArtNetMessages:receivedDmx -> DMXBuffer83:DMXIn;
+Scale:scaledValue -> SummarizeValue:value;
 SpecifyArtNetInput:device -> ReceiveArtNetMessages:device;
-SummarizeValue4:summary -> MakeTextImage2:text;
+SummarizeValue:summary -> MakeTextImage2:text;
 }

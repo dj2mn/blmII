@@ -1,0 +1,78 @@
+/**
+ * @file
+ * @brief DMXto8
+ * Converts DMX value range 0-255 to range 1-8.
+ *
+ * @author [dj2mn](https://vuo.org/user/45381)
+ * @createdInVuoVersion 2.4.1
+ * @lastSavedInVuoVersion 2.4.4
+ * @copyright Copyright © 2022 [dj2mn](https://vuo.org/user/45381)
+ * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
+ */
+
+digraph G
+{
+BecameTrue [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,15"];
+BecameTrue2 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,105"];
+BecameTrue3 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,195"];
+BecameTrue4 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,285"];
+BecameTrue5 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,645"];
+BecameTrue6 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,375"];
+BecameTrue7 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,555"];
+BecameTrue8 [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="510,465"];
+HoldValue [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,15" _value="1" _update_manuallyFirable="yes"];
+HoldValue2 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,285" _value="4"];
+HoldValue3 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,105" _value="2"];
+HoldValue4 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,195" _value="3"];
+HoldValue5 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,555" _value="7"];
+HoldValue6 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,465" _value="6"];
+HoldValue7 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,375" _value="5"];
+HoldValue8 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold Value|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="675,645" _value="8"];
+IsWithinRange [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,195" _minimum="64" _maximum="95"];
+IsWithinRange2 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,105" _minimum="32" _maximum="63"];
+IsWithinRange3 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,375" _minimum="128" _maximum="159"];
+IsWithinRange4 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,15" _minimum="0" _maximum="31"];
+IsWithinRange5 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,285" _minimum="96" _maximum="127"];
+IsWithinRange6 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,465" _minimum="160" _maximum="191"];
+IsWithinRange7 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,555" _minimum="192" _maximum="223"];
+IsWithinRange8 [type="vuo.math.isWithinRange.VuoInteger" version="1.1.0" label="Is within Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<withinRange>withinRange\r" pos="330,645" _minimum="224" _maximum="255"];
+SelectLatest [type="vuo.select.latest.8.VuoInteger" version="1.0.0" label="Select Latest|<refresh>refresh\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<latest>latest\r" pos="825,105"];
+ShareValue [type="vuo.data.share.VuoInteger" version="1.0.0" label="Share Value|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="120,120"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Input>Input\r" _Input_type="VuoInteger"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Output>Output\l" _Output_type="VuoInteger"];
+
+BecameTrue2:becameTrue -> HoldValue3:update;
+BecameTrue3:becameTrue -> HoldValue4:update;
+BecameTrue4:becameTrue -> HoldValue2:update;
+BecameTrue5:becameTrue -> HoldValue8:update;
+BecameTrue6:becameTrue -> HoldValue7:update;
+BecameTrue7:becameTrue -> HoldValue5:update;
+BecameTrue8:becameTrue -> HoldValue6:update;
+BecameTrue:becameTrue -> HoldValue:update;
+HoldValue2:heldValue -> SelectLatest:option4;
+HoldValue3:heldValue -> SelectLatest:option2;
+HoldValue4:heldValue -> SelectLatest:option3;
+HoldValue5:heldValue -> SelectLatest:option7;
+HoldValue6:heldValue -> SelectLatest:option6;
+HoldValue7:heldValue -> SelectLatest:option5;
+HoldValue8:heldValue -> SelectLatest:option8;
+HoldValue:heldValue -> SelectLatest:option1;
+IsWithinRange2:withinRange -> BecameTrue2:value;
+IsWithinRange3:withinRange -> BecameTrue6:value;
+IsWithinRange4:withinRange -> BecameTrue:value;
+IsWithinRange5:withinRange -> BecameTrue4:value;
+IsWithinRange6:withinRange -> BecameTrue8:value;
+IsWithinRange7:withinRange -> BecameTrue7:value;
+IsWithinRange8:withinRange -> BecameTrue5:value;
+IsWithinRange:withinRange -> BecameTrue3:value;
+PublishedInputs:Input -> ShareValue:value;
+SelectLatest:latest -> PublishedOutputs:Output;
+ShareValue:sameValue -> IsWithinRange2:value;
+ShareValue:sameValue -> IsWithinRange3:value;
+ShareValue:sameValue -> IsWithinRange4:value;
+ShareValue:sameValue -> IsWithinRange5:value;
+ShareValue:sameValue -> IsWithinRange6:value;
+ShareValue:sameValue -> IsWithinRange7:value;
+ShareValue:sameValue -> IsWithinRange8:value;
+ShareValue:sameValue -> IsWithinRange:value;
+}

@@ -60,13 +60,11 @@
   "attributes": {
     "Pan": {
       "addresscoarse": 1,
-      "addressfine": 2,
-      "default": 128
+      "addressfine": 2
     },
     "Tilt": {
       "addresscoarse": 3,
-      "addressfine": 4,
-      "default": 128
+      "addressfine": 4
     },
     "Pan/Tilt Speed": {
       "address": 5,

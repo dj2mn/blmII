@@ -1,8 +1,7 @@
 {
   "modulation": {
-    "dim": {
-      "multiplyBy": "volume",
-      "attribute": "Dim",
+    "brightness": {
+      "attribute": "Brightness",
       "mergeMode": "addition",
       "fallback": "none"
     },
@@ -23,9 +22,8 @@
     }
   },
   "attributes": {
-    "Dim": {
-      "address": 1,
-      "default": 0
+    "Brightness": {
+      "address": 1
     },
     "Water Effect": {
       "address": 2,
