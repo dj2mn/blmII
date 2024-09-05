@@ -4,7 +4,7 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.2
- * @lastSavedInVuoVersion 2.4.4
+ * @lastSavedInVuoVersion 2.4.5
  * @copyright Copyright © 2023 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
@@ -91,8 +91,9 @@ Scale26 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale X Control|<r
 Scale27 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale DMX values to list size|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="15,1275" _start="0" _end="63" _scaledStart="0" _limitToRange="false"];
 Scale28 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale Y Control|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1440,885" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="10.0" _limitToRange="false"];
 Scale29 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale Z Control|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1440,915" _start="0." _end="255.0" _scaledStart="0.0" _scaledEnd="10.0" _limitToRange="false"];
+Scale3 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="300,810" _value="0." _start="0." _end="1." _scaledStart="0." _scaledEnd="100." _limitToRange="false"];
 Scale4 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="450,435" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="1.0" _limitToRange="false"];
-Scale5 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="540,1365" _start="0.0" _end="63.0" _scaledStart="200.0" _scaledEnd="1.0" _limitToRange="true"];
+Scale5 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="540,1365" _start="0.0" _end="63.0" _scaledStart="200.0" _scaledEnd="1.5" _limitToRange="true"];
 Scale8 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale ObjectSize DMX Input|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="300,840" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="2.0" _limitToRange="false"];
 Scale9 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="435,420" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="1.0" _limitToRange="false"];
 SelectInput [type="vuo.select.in.boolean.VuoImage" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<falseOption>falseOption\l|<trueOption>trueOption\l|<out>out\r" pos="2220,810"];
