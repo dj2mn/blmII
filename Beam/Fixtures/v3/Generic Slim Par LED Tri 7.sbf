@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 3,
+  "profileVersion": 1,
+  "manufacturer": "Generic",
+  "model": "SlimPAR 7LED",
+  "modes": {
+    "7-channel": {
+      "channels": {
+        "Dim": {
+          "address8Bit": 1,
+          "highlightValue": 255
+        },
+        "Red": {
+          "address8Bit": 5,
+          "defaultValue": 255,
+          "highlightValue": 255
+        },
+        "Green": {
+          "address8Bit": 6,
+          "defaultValue": 255,
+          "highlightValue": 255
+        },
+        "Blue": {
+          "address8Bit": 7,
+          "defaultValue": 255,
+          "highlightValue": 255
+        },
+        "Strobe Rate": {
+          "address8Bit": 2
+        },
+        "Automatic Programs / Sound-Active Mode": {
+          "address8Bit": 3
+        },
+        "Program Speed": {
+          "address8Bit": 4
+        }
+      },
+      "modulation": {
+        "speed": {
+          "channel": "Program Speed",
+          "mergeMode": "htp",
+          "fallback": "none"
+        },
+        "stroberate": {
+          "channel": "Strobe Rate",
+          "mergeMode": "weightedaverage",
+          "fallback": "none"
+        },
+        "program": {
+          "channel": "Automatic Programs / Sound-Active Mode",
+          "mergeMode": "htp",
+          "fallback": "none"
+        }
+      },
+      "colorspace": {
+        "colorspaceType": "rgbi",
+        "additive": {
+          "red": {
+            "channel": "Red"
+          },
+          "green": {
+            "channel": "Green"
+          },
+          "blue": {
+            "channel": "Blue"
+          },
+          "intensity": {
+            "channel": "Dim"
+          }
+        },
+        "subtractive": {}
+      },
+      "cells": []
+    }
+  }
+}

@@ -4,16 +4,16 @@
  *
  * @author [dj2mn](https://vuo.org/user/45381)
  * @createdInVuoVersion 2.4.1
- * @lastSavedInVuoVersion 2.4.3
+ * @lastSavedInVuoVersion 2.4.5
  * @copyright Copyright © 2022 [dj2mn](https://vuo.org/user/45381)
  * @see This is a Vuo Composition source code file.  See https://vuo.org for further information.
  */
 
 digraph G
 {
-Add10 [type="vuo.math.add.VuoInteger" version="2.1.1" label="Add|<refresh>refresh\l|<values>values\l|<sum>sum\r" pos="900,1920"];
-AddAnalogImageDistortion [type="vuo.image.analogDistortion" version="1.0.1" label="Add Analog Image Distortion|<refresh>refresh\l|<image>image\l|<flagging>flagging\l|<tearing>tearing\l|<edgeBlanking>edgeBlanking\l|<bearding>bearding\l|<beardingDistance>beardingDistance\l|<ghosting>ghosting\l|<ghostingDistance>ghostingDistance\l|<ringing>ringing\l|<noiseAmount>noiseAmount\l|<noiseScale>noiseScale\l|<verticalOffset>verticalOffset\l|<distortedImage>distortedImage\r" pos="1395,690" _flagging="-0.5" _edgeBlanking="0.04" _bearding="0.1" _beardingDistance="0.005" _ghostingDistance="0.03" _ringing="0.2" _noiseScale="0.005" _verticalOffset="-0.02"];
-BlendImageWithFeedback3 [type="vuo.image.feedback" version="1.1.0" label="Blend Image with Feedback|<refresh>refresh\l|<image>image\l|<imageTransform>imageTransform\l|<feedbackTransform>feedbackTransform\l|<feedbackOpacity>feedbackOpacity\l|<feedbackBlendMode>feedbackBlendMode\l|<pixelAligned>pixelAligned\l|<imageInForeground>imageInForeground\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<feedbackImage>feedbackImage\r" pos="1395,1485" _imageTransform="\"identity\"" _feedbackOpacity="0.51000000000000001" _pixelAligned="false" _imageInForeground="false" _width="0" _height="0" _colorDepth="\"8bpc\""];
+Add10 [type="vuo.math.add.VuoInteger" version="2.1.1" label="Add|<refresh>refresh\l|<values>values\l|<sum>sum\r" pos="870,1845"];
+AddAnalogImageDistortion [type="vuo.image.analogDistortion" version="1.0.1" label="Add Analog Image Distortion|<refresh>refresh\l|<image>image\l|<flagging>flagging\l|<tearing>tearing\l|<edgeBlanking>edgeBlanking\l|<bearding>bearding\l|<beardingDistance>beardingDistance\l|<ghosting>ghosting\l|<ghostingDistance>ghostingDistance\l|<ringing>ringing\l|<noiseAmount>noiseAmount\l|<noiseScale>noiseScale\l|<verticalOffset>verticalOffset\l|<distortedImage>distortedImage\r" pos="1395,660" _flagging="-0.5" _edgeBlanking="0.04" _bearding="0.1" _beardingDistance="0.005" _ghostingDistance="0.03" _ringing="0.2" _noiseScale="0.005" _verticalOffset="-0.02"];
+BlendImageWithFeedback3 [type="vuo.image.feedback" version="1.1.0" label="Blend Image with Feedback|<refresh>refresh\l|<image>image\l|<imageTransform>imageTransform\l|<feedbackTransform>feedbackTransform\l|<feedbackOpacity>feedbackOpacity\l|<feedbackBlendMode>feedbackBlendMode\l|<pixelAligned>pixelAligned\l|<imageInForeground>imageInForeground\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<feedbackImage>feedbackImage\r" pos="1410,1560" _imageTransform="\"identity\"" _feedbackOpacity="0.51000000000000001" _pixelAligned="false" _imageInForeground="false" _width="0" _height="0" _colorDepth="\"8bpc\""];
 Changed12 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="465,60"];
 Changed13 [type="vuo.event.changed2.VuoInteger" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="495,165"];
 Changed2 [type="vuo.event.changed2.VuoColor" version="2.0.0" label="Changed|<refresh>refresh\l|<value>value\l|<changed>changed\r" pos="585,300"];
@@ -30,44 +30,51 @@ ConvertIntegerToRealNumber17 [type="vuo.type.integer.real" version="1.0.0" label
 ConvertIntegerToRealNumber18 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="1065,1695"];
 ConvertIntegerToRealNumber2 [type="vuo.type.integer.real" version="1.0.0" label="Convert Integer to Real Number|<refresh>refresh\l|<integer>integer\l|<real>real\r" pos="525,1680"];
 ConvertRealToScale [type="vuo.type.scale.real.transform2d.xy" version="1.0.0" label="Convert Real to Scale|<refresh>refresh\l|<scale>scale\l|<transform>transform\r" pos="1965,1800"];
-Divide2 [type="vuo.math.divide.VuoReal" version="2.0.0" label="Divide|<refresh>refresh\l|<a>a\l|<b>b\l|<quotient>quotient\r" pos="690,1860" _b="64.0"];
+Divide2 [type="vuo.math.divide.VuoReal" version="2.0.0" label="Divide|<refresh>refresh\l|<a>a\l|<b>b\l|<quotient>quotient\r" pos="795,1740" _b="64.0"];
 FrostImage [type="vuo.image.frost" version="1.1.1" label="Frost Image|<refresh>refresh\l|<image>image\l|<color>color\l|<brightness>brightness\l|<noiseCenter>noiseCenter\l|<noiseTime>noiseTime\l|<noiseAmount>noiseAmount\l|<noiseScale>noiseScale\l|<chromaticAberration>chromaticAberration\l|<levels>levels\l|<roughness>roughness\l|<spacing>spacing\l|<iterations>iterations\l|<frostedImage>frostedImage\r" pos="1410,1125" _color="\{\"r\":0.88,\"g\":0.93,\"b\":1.,\"a\":1.\}" _noiseCenter="\{\"x\":0,\"y\":0\}" _noiseTime="0.0" _noiseScale="0.59999999999999998" _chromaticAberration="0.5" _levels="1" _roughness="0.5" _spacing="2.0"];
 HoldCubeSpeed4 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold FX Select|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="990,165"];
 HoldValue6 [type="vuo.data.hold2.VuoInteger" version="3.0.0" label="Hold FX Depth|<refresh>refresh\l|<update>update\l|<value>value\l|<heldValue>heldValue\r" pos="510,210"];
-LimitToRange [type="vuo.math.limitToRange.VuoInteger" version="1.0.1" label="Limit to Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<wrapMode>wrapMode\l|<limitedValue>limitedValue\r" pos="705,1740" _minimum="0" _maximum="63" _wrapMode="\"wrap\""];
-MakeCrosshatchImage [type="vuo.image.crosshatch" version="1.0.0" label="Make Crosshatch Image|<refresh>refresh\l|<image>image\l|<backgroundColor>backgroundColor\l|<lineColor>lineColor\l|<threshold>threshold\l|<width>width\l|<center>center\l|<coverage>coverage\l|<crosshatchedImage>crosshatchedImage\r" pos="1395,1710" _center="\{\"x\":-0.51999998092651367,\"y\":0.72000002861022949\}" _coverage="0.32000000000000001"];
+LimitToRange [type="vuo.math.limitToRange.VuoInteger" version="1.0.1" label="Limit to Range|<refresh>refresh\l|<value>value\l|<minimum>minimum\l|<maximum>maximum\l|<wrapMode>wrapMode\l|<limitedValue>limitedValue\r" pos="810,1590" _minimum="0" _maximum="63" _wrapMode="\"wrap\""];
+MakeCrosshatchImage [type="vuo.image.crosshatch" version="1.0.0" label="Make Crosshatch Image|<refresh>refresh\l|<image>image\l|<backgroundColor>backgroundColor\l|<lineColor>lineColor\l|<threshold>threshold\l|<width>width\l|<center>center\l|<coverage>coverage\l|<crosshatchedImage>crosshatchedImage\r" pos="1410,1815" _center="\{\"x\":-0.51999998092651367,\"y\":0.72000002861022949\}" _coverage="0.32000000000000001"];
 MakeKaleidoscopeImage2 [type="vuo.image.kaleidoscope" version="1.0.1" label="Make Kaleidoscope Image|<refresh>refresh\l|<image>image\l|<sides>sides\l|<angle>angle\l|<bladeCenter>bladeCenter\l|<imageCenter>imageCenter\l|<reflectOddSides>reflectOddSides\l|<reflectedImage>reflectedImage\r" pos="1395,945" _angle="0." _bladeCenter="\{\"x\":0.0,\"y\":0.0\}" _imageCenter="\{\"x\":0.0,\"y\":0.0\}" _reflectOddSides="true"];
-MakeList36 [type="vuo.list.make.2.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="867,1931" _2="1"];
+MakeList36 [type="vuo.list.make.2.VuoInteger" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="837,1856" _2="1"];
 MapPalettes [type="klaus.mapPalettes" version="" label="MapPalettes|<refresh>refresh\l|<Image>Image\l|<Select>Select\l|<Depth>Depth\l|<Color1>Color1\l|<Color2>Color2\l|<QuantizedImage>QuantizedImage\r" pos="1440,465" _Depth="8"];
-PixellateImage [type="vuo.image.pixellate" version="1.2.0" label="Pixellate Image|<refresh>refresh\l|<image>image\l|<pixelShape>pixelShape\l|<pixelSize>pixelSize\l|<center>center\l|<pixellatedImage>pixellatedImage\r" pos="1425,1365" _pixelShape="\"rectangle\"" _center="\{\"x\":0.0,\"y\":0.0\}"];
+PixellateImage [type="vuo.image.pixellate" version="1.2.0" label="Pixellate Image|<refresh>refresh\l|<image>image\l|<pixelShape>pixelShape\l|<pixelSize>pixelSize\l|<center>center\l|<pixellatedImage>pixellatedImage\r" pos="1425,1395" _pixelShape="\"rectangle\"" _center="\{\"x\":0.0,\"y\":0.0\}"];
 RoundDown [type="vuo.math.roundDown" version="2.0.0" label="Round Down|<refresh>refresh\l|<real>real\l|<roundedDown>roundedDown\r" pos="795,1755"];
-Scale10 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="990,1020" _start="0" _end="255" _scaledStart="1" _scaledEnd="16" _limitToRange="false"];
-Scale11 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="960,1395" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
-Scale12 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,825" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.20000000000000001" _limitToRange="false"];
-Scale13 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1020,840" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
-Scale14 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1035,855" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
-Scale15 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="990,1170" _start="0." _end="255.0" _scaledStart="1.0" _scaledEnd="2.0" _limitToRange="false"];
-Scale16 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,1185" _start="0." _end="255.0" _scaledStart="0.5" _scaledEnd="2.0" _limitToRange="false"];
-Scale17 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1155,1260" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
-Scale18 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="960,1575" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="0.80000000000000004" _limitToRange="false"];
-Scale19 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="975,1590" _start="0.0" _end="255.0" _scaledStart="0.01" _scaledEnd="0.050000000000000003" _limitToRange="false"];
+Scale10 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1020,960" _start="0" _end="255" _scaledStart="1" _scaledEnd="16" _limitToRange="false"];
+Scale11 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1050,1395" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
+Scale12 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,780" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.20000000000000001" _limitToRange="false"];
+Scale13 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1020,795" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
+Scale14 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1035,810" _start="0." _end="255.0" _scaledStart="0." _scaledEnd="0.5" _limitToRange="false"];
+Scale15 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,1140" _start="0." _end="255.0" _scaledStart="1.0" _scaledEnd="2.0" _limitToRange="false"];
+Scale16 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1020,1155" _start="0." _end="255.0" _scaledStart="0.5" _scaledEnd="2.0" _limitToRange="false"];
+Scale17 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1050,1185" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
+Scale18 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1035,1935" _start="0.0" _end="255.0" _scaledStart="0.10000000000000001" _scaledEnd="0.80000000000000004" _limitToRange="false"];
+Scale19 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1050,1950" _start="0.0" _end="255.0" _scaledStart="0.01" _scaledEnd="0.050000000000000003" _limitToRange="false"];
 Scale2 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1005,630" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
-Scale20 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="975,1740" _start="0.0" _end="63.0" _scaledStart="0.0" _scaledEnd="2.0" _limitToRange="false"];
+Scale20 [type="vuo.math.scale.VuoReal" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1035,1590" _start="0.0" _end="63.0" _scaledStart="0.0" _scaledEnd="2.0" _limitToRange="false"];
 Scale9 [type="vuo.math.scale.VuoInteger" version="2.0.0" label="Scale|<refresh>refresh\l|<value>value\l|<start>start\l|<end>end\l|<scaledStart>scaledStart\l|<scaledEnd>scaledEnd\l|<limitToRange>limitToRange\l|<scaledValue>scaledValue\r" pos="1290,135" _start="0" _end="255" _scaledStart="1" _scaledEnd="8" _limitToRange="false"];
-SelectInput [type="vuo.select.in.8.VuoImage" version="2.0.0" label="Select Input|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="1650,315"];
-SelectInput2 [type="vuo.select.in.8.VuoBlendMode" version="2.0.0" label="Select Blend Mode|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="1035,1920" _option1="\"overlay\"" _option2="\"multiply\"" _option3="\"screen\"" _option4="\"hard-mix\""];
-SelectOutput [type="vuo.select.out.8.VuoImage" version="2.0.0" label="Select Output|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="1125,315"];
+SelectInput [type="vuo.select.in.8.VuoImage" version="2.0.0" label="Select FX output|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="1680,300"];
+SelectInput2 [type="vuo.select.in.8.VuoBlendMode" version="2.0.0" label="Select Blend Mode|<refresh>refresh\l|<which>which\l|<option1>option1\l|<option2>option2\l|<option3>option3\l|<option4>option4\l|<option5>option5\l|<option6>option6\l|<option7>option7\l|<option8>option8\l|<out>out\r" pos="1020,1740" _option1="\"overlay\"" _option2="\"multiply\"" _option3="\"screen\"" _option4="\"hard-mix\""];
+SelectOutput [type="vuo.select.out.8.VuoImage" version="2.0.0" label="Send Image to Effect|<refresh>refresh\l|<which>which\l|<in>in\l|<option1>option1\r|<option2>option2\r|<option3>option3\r|<option4>option4\r|<option5>option5\r|<option6>option6\r|<option7>option7\r|<option8>option8\r" pos="1125,315"];
 PublishedInputs [type="vuo.in" label="PublishedInputs|<Image>Image\r|<SelectEffect>SelectEffect\r|<EffectDepth>EffectDepth\r|<Color1>Color1\r|<Color2>Color2\r" _Image_type="VuoImage" _SelectEffect_type="VuoInteger" _EffectDepth_type="VuoInteger" _EffectDepth="0" _Color1_type="VuoColor" _Color2_type="VuoColor"];
 PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Out>Out\l" _Out_type="VuoImage"];
 
-Comment6 [type="vuo.comment" label="\"Depth Scales\"" pos="735,570" width="461" height="1320"];
+Comment [type="vuo.comment" label="\"Effect 1\"" pos="1395,405" width="183" height="155" fillcolor="lime"];
+Comment2 [type="vuo.comment" label="\"Effect 2\"" pos="1380,600" width="216" height="254" fillcolor="lime"];
+Comment3 [type="vuo.comment" label="\"Effect 3\"" pos="1380,885" width="208" height="161" fillcolor="lime"];
+Comment4 [type="vuo.comment" label="\"Effect 4\"" pos="1395,1065" width="185" height="251" fillcolor="lime"];
+Comment5 [type="vuo.comment" label="\"Effect 6\"" pos="1395,1500" width="211" height="236" fillcolor="lime"];
+Comment6 [type="vuo.comment" label="\"Depth Scales\"" pos="735,570" width="441" height="1497"];
+Comment7 [type="vuo.comment" label="\"Effect 7\"" pos="1395,1755" width="218" height="191" fillcolor="lime"];
+Comment8 [type="vuo.comment" label="\"Effect 5\"" pos="1395,1335" width="188" height="146" fillcolor="lime"];
 
 Add10:sum -> SelectInput2:which;
-AddAnalogImageDistortion:distortedImage -> SelectInput:option3;
-BlendImageWithFeedback3:feedbackImage -> SelectInput:option7;
+AddAnalogImageDistortion:distortedImage -> SelectInput:option3 [style=invis];
+BlendImageWithFeedback3:feedbackImage -> SelectInput:option7 [style=invis];
 Changed12:changed -> HoldCubeSpeed4:update;
 Changed13:changed -> HoldValue6:update;
-Changed2:changed -> MapPalettes:Image;
+Changed2:changed -> MapPalettes:Image [style=invis];
 Changed3:changed -> MapPalettes:Image;
 ConvertIntegerToRealNumber10:real -> Scale12:value;
 ConvertIntegerToRealNumber11:real -> MakeKaleidoscopeImage2:sides;
@@ -82,7 +89,7 @@ ConvertIntegerToRealNumber2:real -> Divide2:a;
 ConvertIntegerToRealNumber:real -> Scale20:value;
 ConvertRealToScale:transform -> BlendImageWithFeedback3:feedbackTransform;
 Divide2:quotient -> RoundDown:real;
-FrostImage:frostedImage -> SelectInput:option5;
+FrostImage:frostedImage -> SelectInput:option5 [style=invis];
 HoldCubeSpeed4:heldValue -> Scale9:value;
 HoldValue6:heldValue -> ConvertIntegerToRealNumber10:integer [style=invis];
 HoldValue6:heldValue -> ConvertIntegerToRealNumber12:integer [style=invis];
@@ -98,11 +105,11 @@ HoldValue6:heldValue -> Scale10:value [style=invis];
 HoldValue6:heldValue -> Scale17:value [style=invis];
 HoldValue6:heldValue -> Scale2:value [style=invis];
 LimitToRange:limitedValue -> ConvertIntegerToRealNumber:integer;
-MakeCrosshatchImage:crosshatchedImage -> SelectInput:option8;
-MakeKaleidoscopeImage2:reflectedImage -> SelectInput:option4;
+MakeCrosshatchImage:crosshatchedImage -> SelectInput:option8 [style=invis];
+MakeKaleidoscopeImage2:reflectedImage -> SelectInput:option4 [style=invis];
 MakeList36:list -> Add10:values;
-MapPalettes:QuantizedImage -> SelectInput:option2;
-PixellateImage:pixellatedImage -> SelectInput:option6;
+MapPalettes:QuantizedImage -> SelectInput:option2 [style=invis];
+PixellateImage:pixellatedImage -> SelectInput:option6 [style=invis];
 PublishedInputs:Color1 -> Changed2:value;
 PublishedInputs:Color1 -> MakeCrosshatchImage:backgroundColor;
 PublishedInputs:Color1 -> MapPalettes:Color1;
@@ -132,11 +139,11 @@ Scale9:scaledValue -> SelectOutput:which;
 SelectInput2:out -> BlendImageWithFeedback3:feedbackBlendMode;
 SelectInput:out -> PublishedOutputs:Out;
 SelectOutput:option1 -> SelectInput:option1;
-SelectOutput:option2 -> MapPalettes:Image;
-SelectOutput:option3 -> AddAnalogImageDistortion:image;
-SelectOutput:option4 -> MakeKaleidoscopeImage2:image;
-SelectOutput:option5 -> FrostImage:image;
-SelectOutput:option6 -> PixellateImage:image;
-SelectOutput:option7 -> BlendImageWithFeedback3:image;
-SelectOutput:option8 -> MakeCrosshatchImage:image;
+SelectOutput:option2 -> MapPalettes:Image [style=invis];
+SelectOutput:option3 -> AddAnalogImageDistortion:image [style=invis];
+SelectOutput:option4 -> MakeKaleidoscopeImage2:image [style=invis];
+SelectOutput:option5 -> FrostImage:image [style=invis];
+SelectOutput:option6 -> PixellateImage:image [style=invis];
+SelectOutput:option7 -> BlendImageWithFeedback3:image [style=invis];
+SelectOutput:option8 -> MakeCrosshatchImage:image [style=invis];
 }

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 3,
+  "profileVersion": 1,
+  "manufacturer": "CRLaser",
+  "model": "Compact 100mw",
+  "modes": {
+    "Mode 1": {
+      "channels": {
+        "Mode": {
+          "address8Bit": 1,
+          "defaultValue": 0
+        },
+        "Patterns": {
+          "address8Bit": 2,
+          "defaultValue": 0
+        },
+        "Zoom": {
+          "address8Bit": 3,
+          "defaultValue": 0
+        },
+        "Y Rotation": {
+          "address8Bit": 4,
+          "defaultValue": 0
+        },
+        "X Rotation": {
+          "address8Bit": 5,
+          "defaultValue": 0
+        },
+        "Z Rotation": {
+          "address8Bit": 6,
+          "defaultValue": 0
+        },
+        "X Position": {
+          "address8Bit": 7,
+          "defaultValue": 0
+        },
+        "Y Position": {
+          "address8Bit": 8,
+          "defaultValue": 0
+        }
+      },
+      "modulation": {
+        "dim": {
+          "channel": "Mode",
+          "mergeMode": "htp",
+          "fallback": "last"
+        },
+        "program": {
+          "channel": "",
+          "mergeMode": "addition",
+          "fallback": "none"
+        },
+        "pan": {
+          "channel": "X Position",
+          "mergeMode": "addition",
+          "fallback": "none"
+        },
+        "tilt": {
+          "channel": "Y Position",
+          "mergeMode": "addition",
+          "fallback": "none"
+        },
+        "x-rotation": {
+          "channel": "X Position",
+          "mergeMode": "addition",
+          "fallback": "none"
+        },
+        "y-rotation": {
+          "channel": "X Position",
+          "mergeMode": "addition",
+          "fallback": "none"
+        },
+        "z-rotation": {
+          "channel": "Z Rotation",
+          "mergeMode": "addition",
+          "fallback": "none"
+        }
+      },
+      "colorspace": {
+        "colorspaceType": "none",
+        "additive": {},
+        "subtractive": {}
+      },
+      "cells": []
+    }
+  }
+}

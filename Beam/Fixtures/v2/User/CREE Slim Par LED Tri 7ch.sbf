@@ -2,7 +2,7 @@
   "modulation": {
     "strobe": {
       "attribute": "Strobe Rate",
-      "mergeMode": "weightedaverage",
+      "mergeMode": "addition",
       "fallback": "none"
     },
     "preset": {
@@ -12,7 +12,7 @@
     },
     "speed": {
       "attribute": "Speed",
-      "mergeMode": "weightedaverage",
+      "mergeMode": "addition",
       "fallback": "none"
     }
   },
@@ -30,13 +30,16 @@
       "address": 4
     },
     "Strobe Rate": {
-      "address": 5
+      "address": 5,
+      "default": 0
     },
     "Preset": {
-      "address": 6
+      "address": 6,
+      "default": 0
     },
     "Speed": {
-      "address": 7
+      "address": 7,
+      "default": 0
     }
   },
   "schemaVersion": 2,
